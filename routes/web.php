@@ -31,9 +31,9 @@ Route::get('/react', function () {
 // Route::get('/react/.*', function () {
 //     return view('react');
 // });
-// Route::get('react/{any}', function () {
-//     return view('react');
-// })->where('any', '.*');
+Route::get('react/{any}', function () {
+    return view('react');
+})->where('any', '.*');
 
 
 // Admin

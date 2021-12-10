@@ -18,17 +18,18 @@ const Home = () => {
 
     return (
         <div>
-            <header className="h-12 bg-gray-500">header</header>
-            <main className="bg-gray-500 text-center">
-                    <ul>
+            <main className="bg-gray-200 text-center">
+                <div className="lg:w-4/5 bg-gray-200 mx-auto">
+                    <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center">
                         {
-                            posts.map(post => <li key={post.id} className="bg-blue-200 mb-4">
-                                    <div className="btn">
-                                        <Link to={`/react/blog/${post.path}`}>{post.title}</Link>
-                                    </div>                          
+                            posts.map(post => <li key={post.id} className="bg-regal-white w-84 h-60 m-8 rounded-2xl shadow-red">
+                                <div className="h-60 w-full flex items-end justify-center">
+                                    <Link to={`/react/blog/${post.path}`} className="text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-xl h-24">{post.title}</Link>
+                                </div>
                                 </li>)
                         }
                     </ul>
+                </div>
             </main>
         </div>
     )

@@ -44,7 +44,7 @@ class HomeController extends Controller
         $data = $request->all();
         $user = Auth::user();
 
-        $exist_post = Post::where('id', $data['content'])->where('content', $data['content'])->first();
+        $exist_post = Post::where('id', $data['id'])->where('content', $data['content'])->first();
         if (empty($exist_psot)) {
             $new_post = Post::insertGetId(['title' => $data['title'], 'path' => $data['path'], 'filepath' => $data['filepath'], 'status' => $data['status'], 'content' => $data['content'], 'user_id' => $user['id']]);
         } else {

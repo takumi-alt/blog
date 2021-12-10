@@ -2,7 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import '../../css/app.css';
 // import hljs from 'highlight.js/lib/core';
 // import javascript from 'highlight.js/lib/languages/javascript';
@@ -30,7 +30,7 @@ const Blog = props => {
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '')
           return !inline && match ? (
-            <SyntaxHighlighter style={dracula} language={match[1]} PreTag="div" {...props}>
+            <SyntaxHighlighter style={prism} language={match[1]} PreTag="div" {...props}>
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (
@@ -43,13 +43,16 @@ const Blog = props => {
     
    
     return (
-        <main className="bg-regal-white">
-            <div className="w-1/2 mx-auto bg-regal-white">
-                <ReactMarkdown className="text-regal-black">
-                    {title}
-                </ReactMarkdown>
-                <ReactMarkdown components={components} className="text-regal-black">{content}</ReactMarkdown>
-            </div>
+        <main className="bg-gray-200">
+            
+                <div className="md:w-2/3 mx-auto pt-8 px-4 bg-gray-200">
+                    <ReactMarkdown className="text-regal-black">
+                        {title}
+                    </ReactMarkdown>
+                    <ReactMarkdown components={components} className="text-regal-black">
+                        {content}
+                    </ReactMarkdown>
+                </div>
 
         </main>
     )

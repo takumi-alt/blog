@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +29,9 @@ Route::get("/read/{path}", function ($path) {
 Route::get("/all", function () {
     return response()->json(
         [
-            'posts' => Post::all()
+            'posts' => Post::orderBy('id', 'desc')->get()
         ]
     );
-    // Modelのクラスを指定
-    // $posts = Post::all();
-
-    // return $posts;
 });
+
+Route::post("/contact", [ApiController::class, 'contact'])->name('contact');

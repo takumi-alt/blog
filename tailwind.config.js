@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   purge: [
     './storage/framework/views/*.php',
@@ -9,15 +10,45 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            'regal-red': '#ff5722',
-            'regal-blue': '#00adb5',
+            'regal-red': '#ee6644',
+            'regal-pink': '#ffdccc',
+            'regal-yellow': '#eecc66',
+            'regal-blue': '#44cccc',
+            'regal-green': '#008844',
             'regal-black': '#303841',
+            'regal-gray': '#aaaaaa',
             'regal-white': '#eeeeee',
-          }
+        },
+        spacing: {
+            '52': '13rem',
+            '72': '18rem',
+            '84': '21rem',
+            '92': '22rem',
+            '94': '23rem',
+            '96': '24rem',
+            '110': '30rem',
+        },
+        
     },
+    scale: {
+        '60': '.6',
+        '65': '.65',
+    },
+    boxShadow: {
+        nomal: '15px 15px 0px 0 rgba(120, 118, 123, 0.5)',
+        red: '15px 15px 0px 0 rgba(255, 96, 94)',
+    }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addBase, config }) {
+        addBase({
+          'h1': { fontSize: config('theme.fontSize.xl') },
+          'h2': { fontSize: config('theme.fontSize.xl') },
+          'h3': { fontSize: config('theme.fontSize.lg') },
+        })
+      })
+  ],
 }
