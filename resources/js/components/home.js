@@ -24,7 +24,7 @@ const Home = () => {
                         {
                             posts.map(post => <li key={post.id} className="bg-regal-white w-84 h-60 m-8 rounded-2xl shadow-red">
                                 <div className="h-60 w-full flex items-end justify-center">
-                                    <Link to={`/react/blog/${post.path}`} className="text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-24">{post.title}</Link>
+                                    <Link to={`/blog/${post.path}`} className="text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-24">{post.title}</Link>
                                 </div>
                                 </li>)
                         }

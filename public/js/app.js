@@ -2284,10 +2284,10 @@ var Head = function Head() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "flex justify-center items-center h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-4xl sm:text-6xl text-regal-white m-4",
+        className: "font-black text-4xl sm:text-6xl text-regal-white m-2",
         children: next
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-4xl sm:text-6xl text-regal-white m-4",
+        className: "font-black text-4xl sm:text-6xl text-regal-white m-2",
         children: Blog
       })]
     })
@@ -2357,14 +2357,14 @@ var Navbar = function Navbar() {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "bg-regal-white flex justify-center h-12 md:w-4/5 mx-auto",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-          to: "/react/",
+          to: "/blog/",
           className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "home"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "search"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-          to: '/react/contact',
+          to: '/blog/contact',
           className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "contact"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
@@ -2563,7 +2563,7 @@ var Home = function Home() {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                 className: "h-60 w-full flex items-end justify-center",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
-                  to: "/react/blog/".concat(post.path),
+                  to: "/blog/".concat(post.path),
                   className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-24",
                   children: post.title
                 })
@@ -2620,13 +2620,13 @@ var App = function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Head__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Navbar__WEBPACK_IMPORTED_MODULE_8__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-        path: "/react/",
+        path: "/blog/",
         element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_home__WEBPACK_IMPORTED_MODULE_4__["default"], {})
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-        path: "/react/blog/:id",
+        path: "/blog/:id",
         element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_blog__WEBPACK_IMPORTED_MODULE_3__["default"], {})
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-        path: "/react/contact/",
+        path: "/blog/contact/",
         element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Contact__WEBPACK_IMPORTED_MODULE_7__["default"], {})
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_Hoot__WEBPACK_IMPORTED_MODULE_6__["default"], {})]
