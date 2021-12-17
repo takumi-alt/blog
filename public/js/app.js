@@ -2284,10 +2284,10 @@ var Head = function Head() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "flex justify-center items-center h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-6xl text-regal-white m-4",
+        className: "font-black text-3xl sm:text-6xl text-regal-white m-4",
         children: next
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-6xl text-regal-white m-4",
+        className: "font-black text-3xl sm:text-6xl text-regal-white m-4",
         children: Blog
       })]
     })
@@ -2358,17 +2358,17 @@ var Navbar = function Navbar() {
         className: "bg-regal-white flex justify-center h-12 md:w-4/5 mx-auto",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: "/react/",
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl text-center border-l-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "home"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl text-center border-l-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "search"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: '/react/contact',
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl text-center border-l-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "contact"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl text-center border-l-2 border-r-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-r-2 border-gray-300 flex-1",
           children: "info"
         })]
       })
