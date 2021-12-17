@@ -30,8 +30,8 @@ const Head = () => {
     return (
         <>
             <div className="flex justify-center items-center h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center">
-                <h3 className="font-black text-3xl sm:text-6xl text-regal-white m-4">{next}</h3>
-                <h3 className="font-black text-3xl sm:text-6xl text-regal-white m-4">{Blog}</h3>
+                <h3 className="font-black text-4xl sm:text-6xl text-regal-white m-4">{next}</h3>
+                <h3 className="font-black text-4xl sm:text-6xl text-regal-white m-4">{Blog}</h3>
             </div>
 
         </>

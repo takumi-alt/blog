@@ -2284,10 +2284,10 @@ var Head = function Head() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "flex justify-center items-center h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-3xl sm:text-6xl text-regal-white m-4",
+        className: "font-black text-4xl sm:text-6xl text-regal-white m-4",
         children: next
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-3xl sm:text-6xl text-regal-white m-4",
+        className: "font-black text-4xl sm:text-6xl text-regal-white m-4",
         children: Blog
       })]
     })
@@ -2564,7 +2564,7 @@ var Home = function Home() {
                 className: "h-60 w-full flex items-end justify-center",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
                   to: "/react/blog/".concat(post.path),
-                  className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-xl h-24",
+                  className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-24",
                   children: post.title
                 })
               })

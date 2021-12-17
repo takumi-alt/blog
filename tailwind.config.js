@@ -19,6 +19,10 @@ module.exports = {
             'regal-gray': '#aaaaaa',
             'regal-white': '#eeeeee',
         },
+        lineHeight: {
+            'extra-loose': '2.5',
+            '12': '3rem',
+          },
         spacing: {
             '52': '13rem',
             '72': '18rem',
