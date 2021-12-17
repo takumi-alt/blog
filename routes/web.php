@@ -16,7 +16,7 @@ use Laravel\Ui\Presets\React;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Auth::routes();
@@ -42,3 +42,4 @@ Route::post('/store', [HomeController::class, 'store'])->name('store');
 Route::get('/edit/{id}', [HomeController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [HomeController::class, 'update'])->name('update');
 Route::get('/top', [HomeController::class, 'top'])->name('top');
+Route::post('/top', [HomeController::class, 'top'])->name('top');
