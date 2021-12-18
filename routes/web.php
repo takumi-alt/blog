@@ -28,9 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/blog', function () {
     return view('react');
 });
-// Route::get('/react/.*', function () {
-//     return view('react');
-// });
+
 Route::get('blog/{any}', function () {
     return view('react');
 })->where('any', '.*');
