@@ -23,6 +23,9 @@ module.exports = {
             'extra-loose': '2.5',
             '12': '3rem',
           },
+        width: {
+            '1/9':'9.1111111%',
+        },
         spacing: {
             '52': '13rem',
             '72': '18rem',

@@ -65,4 +65,10 @@ class HomeController extends Controller
         Post::where('id', $id)->update(['title' => $input['title'], 'path' => $input['path'], 'filepath' => $input['filepath'], 'status' => $input['status'], 'content' => $input['content']]);
         return redirect()->route('top');
     }
+
+    public function delete($id)
+    {
+        Post::where('id', $id)->delete();
+        return redirect()->route('top');
+    }
 }

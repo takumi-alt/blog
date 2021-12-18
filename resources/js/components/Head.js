@@ -33,7 +33,6 @@ const Head = () => {
                 <h3 className="font-black text-4xl sm:text-6xl text-regal-white m-2 sm:m-4">{next}</h3>
                 <h3 className="font-black text-4xl sm:text-6xl text-regal-white m-2 sm:m-4">{Blog}</h3>
             </div>
-
         </>
     )
 }

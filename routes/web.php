@@ -41,3 +41,4 @@ Route::get('/edit/{id}', [HomeController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [HomeController::class, 'update'])->name('update');
 Route::get('/top', [HomeController::class, 'top'])->name('top');
 Route::post('/top', [HomeController::class, 'top'])->name('top');
+Route::get('/delete/{id}', [HomeController::class, 'delete'])->name('delete');
