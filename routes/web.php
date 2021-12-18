@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UploadController;
 use Laravel\Ui\Presets\React;
 
 /*
@@ -42,3 +43,6 @@ Route::post('/update/{id}', [HomeController::class, 'update'])->name('update');
 Route::get('/top', [HomeController::class, 'top'])->name('top');
 Route::post('/top', [HomeController::class, 'top'])->name('top');
 Route::get('/delete/{id}', [HomeController::class, 'delete'])->name('delete');
+
+// img
+Route::resource('/upload', UploadController::class);
