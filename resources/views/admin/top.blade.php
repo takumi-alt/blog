@@ -35,7 +35,7 @@
         @endforeach
     </div>
     <div class="w-4/5 mx-auto">
-        <a href="http://localhost:8000/create" class="bg-gray-500 rounded-2xl">
+        <a href="/create" class="bg-gray-500 rounded-2xl">
             <span class="text-regal-white p-12 text-3xl">create</span>
         </a>
     </div>
