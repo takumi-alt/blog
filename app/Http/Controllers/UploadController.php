@@ -9,7 +9,7 @@ class UploadController extends Controller
     //
     public function index()
     {
-        return view('img');
+        return view('admin/img');
     }
 
     public function store(Request $request)

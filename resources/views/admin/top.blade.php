@@ -33,9 +33,13 @@
         @endforeach
     </div>
     <div class="w-4/5 mx-auto">
-        <a href="/create" class="bg-gray-500 rounded-2xl">
+        <a href="/create" class="bg-gray-500 rounded-2xl m-2">
             <span class="text-regal-white p-12 text-3xl">create</span>
         </a>
+        <a href="/upload" class="bg-gray-500 rounded-2xl m-2">
+            <span class="text-regal-white p-12 text-3xl">insert image</span>
+        </a>
+
     </div>
 
 
