@@ -2284,10 +2284,10 @@ var Head = function Head() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "flex justify-center items-center h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-4xl sm:text-6xl text-regal-white m-2",
+        className: "font-black text-4xl sm:text-6xl text-regal-white m-2 sm:m-4",
         children: next
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-4xl sm:text-6xl text-regal-white m-2",
+        className: "font-black text-4xl sm:text-6xl text-regal-white m-2 sm:m-4",
         children: Blog
       })]
     })
