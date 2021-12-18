@@ -29,7 +29,7 @@ Route::get("/read/{path}", function ($path) {
 Route::get("/all", function () {
     return response()->json(
         [
-            'posts' => Post::orderBy('id', 'desc')->get()
+            'posts' => Post::where('status', 1)->orderBy('id', 'desc')->get()
         ]
     );
 });
