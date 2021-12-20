@@ -15,7 +15,7 @@ const Blog = props => {
     const [content, setContent] = useState();
     const [img, setImg] = useState();
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/read/${params.id}`)
+        axios.get(`/api/read/${params.id}`)
         .then(res => {
             setRecode(res.data.posts);
             setTitle(res.data.posts.title);

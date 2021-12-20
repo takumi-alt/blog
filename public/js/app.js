@@ -2458,7 +2458,7 @@ var Blog = function Blog(props) {
       setImg = _useState8[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    axios.get("http://localhost:8000/api/read/".concat(params.id)).then(function (res) {
+    axios.get("/api/read/".concat(params.id)).then(function (res) {
       setRecode(res.data.posts);
       setTitle(res.data.posts.title);
       setContent(res.data.posts.content);
@@ -2568,7 +2568,7 @@ var Home = function Home() {
       setPosts = _useState2[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get('http://localhost:8000/api/all').then(function (res) {
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/all').then(function (res) {
       setPosts(res.data.posts);
     });
   }, []);
