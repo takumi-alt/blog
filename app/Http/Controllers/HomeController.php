@@ -63,7 +63,7 @@ class HomeController extends Controller
     public function update(Request $request, $id)
     {
         $input = $request->all();
-        Post::where('id', $id)->update(['title' => $input['title'], 'path' => $input['path'], 'filepath' => $input['filepath'], 'status' => $input['status'], 'content' => $input['content']]);
+        Post::where('id', $id)->update(['id' => $input['id'], 'title' => $input['title'], 'path' => $input['path'], 'filepath' => $input['filepath'], 'status' => $input['status'], 'content' => $input['content'], 'created_at' => $input['created_at']]);
         return redirect()->route('top');
     }
 

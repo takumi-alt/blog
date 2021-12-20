@@ -36,10 +36,20 @@
                             <p class="text-regal-white mb-0 mt-4">img</p>
                             <input id="file" name="filepath" class="rounded-2xl" value="{{ $update['filepath'] }}">
                         </div>
+                        <!-- created_at -->
+                        <div>
+                            <p class="text-regal-white mb-0 mt-4">created_at</p>
+                            <input id="time" name="created_at" class="rounded-2xl w-full" value="{{ $update['created_at'] }}">
+                        </div>
                         <!-- 記事のpath -->
                         <div>
                             <p class="text-regal-white mb-0 mt-4">path</p>
-                            <input id="id" name="path" class="rounded-2xl" value="{{ $update['path'] }}">
+                            <input id="id" name="path" class="rounded-2xl w-20" value="{{ $update['path'] }}">
+                        </div>
+                        <!-- id -->
+                        <div>
+                            <p class="text-regal-white mb-0 mt-4">id</p>
+                            <input id="id" name="id" class="rounded-2xl w-8" value="{{ $update['id'] }}">
                         </div>
                         <!-- 投稿status -->
                         <div>

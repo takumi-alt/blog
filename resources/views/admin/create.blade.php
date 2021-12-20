@@ -37,6 +37,11 @@
                             <p id="img" class="text-regal-white mb-0 mt-4">img_path</p>
                             <input id="file" name="filepath" class="rounded-2xl">
                         </div>
+                        <!-- created_at -->
+                        <div>
+                            <p class="text-regal-white mb-0 mt-4">created_at</p>
+                            <input id="time" name="created_at" class="rounded-2xl w-full">
+                        </div>
                         <!-- 記事のpath -->
                         <div>
                             <p class="text-regal-white mb-0 mt-4">path</p>
@@ -46,11 +51,6 @@
                         <div>
                             <p class="text-regal-white mb-0 mt-4">id</p>
                             <input id="id" name="id" class="rounded-2xl w-8">
-                        </div>
-                        <!-- created_at -->
-                        <div>
-                            <p class="text-regal-white mb-0 mt-4">created_at</p>
-                            <input id="time" name="created_at" class="rounded-2xl w-full">
                         </div>
                         <!-- 投稿status -->
                         <div>
