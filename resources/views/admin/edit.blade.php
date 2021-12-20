@@ -34,7 +34,7 @@
                         <!-- アイキャッチ画像 -->
                         <div>
                             <p class="text-regal-white mb-0 mt-4">img</p>
-                            <input id="file" name="filepath" class="rounded-2xl" value="{{ $update['img'] }}">
+                            <input id="file" name="filepath" class="rounded-2xl" value="{{ $update['filepath'] }}">
                         </div>
                         <!-- 記事のpath -->
                         <div>
@@ -76,6 +76,8 @@
                     <div class="bg-gray-200 pt-8 w-4/5 mx-auto">
                         <!-- title部分 -->
                         <div id="title_markdown" class="">title</div>
+                        <!-- アイキャッチ画像部分 -->
+                        <img id="image" width="600" class="mx-auto">
                         <!-- 本文部分 -->
                         <div id="code_markdown" class="">hello</div>
                     </div>
@@ -85,6 +87,23 @@
     </div>
 
     <script>
+        // img_fileの更新
+        const filepath = document.getElementById('file');
+        const filepath_value = `${filepath.value}`;
+
+        function onload_filepath_load() {
+            document.getElementById('image').src = `/storage/${filepath_value}`;
+        }
+
+        function filepath_load() {
+            filepath.addEventListener('input', () => {
+                const filepath_value = `${filepath.value}`;
+                document.getElementById('image').src = `/storage/${filepath_value}`;
+            })
+            console.log(filepath);
+        }
+
+
         // titleの更新
         const title = document.getElementById('title');
         const title_markdown = document.getElementById('title_markdown');
@@ -131,11 +150,13 @@
 
         window.addEventListener("load", markdownCode);
         window.addEventListener("load", markdownTitle);
+        window.addEventListener("load", filepath_load);
 
         // ページ読み込み時に発動させる↓
         window.onload = function() {
             onload_markdownTitle();
             onload_markdownCode();
+            onload_filepath_load();
         }
     </script>
 

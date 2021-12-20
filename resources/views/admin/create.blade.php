@@ -15,7 +15,7 @@
     <script>
         hljs.highlightAll();
     </script>
-    
+
     <title>Document</title>
 </head>
 
@@ -34,7 +34,7 @@
                     <div class="flex justify-between mb-8">
                         <!-- アイキャッチ画像 -->
                         <div>
-                            <p class="text-regal-white mb-0 mt-4">img</p>
+                            <p id="img" class="text-regal-white mb-0 mt-4">img_path</p>
                             <input id="file" name="filepath" class="rounded-2xl">
                         </div>
                         <!-- 記事のpath -->
@@ -78,6 +78,7 @@
                     <div class="bg-gray-200 pt-8 w-4/5 mx-auto">
                         <!-- title部分 -->
                         <div id="title_markdown" class="">title</div>
+                        <img id="image">
                         <!-- 本文部分 -->
                         <div id="code_markdown" class="">hello</div>
                     </div>
@@ -87,6 +88,17 @@
     </div>
 
     <script>
+        // 画像ファイルの読み込みを操作
+        function filepath_load() {
+            const filepath = document.getElementById('file');
+            filepath.addEventListener('input', () => {
+                const filepath_value = `${filepath.value}`;
+                document.getElementById('image').src = `/storage/${filepath_value}`;
+            })
+            console.log(filepath);
+        }
+
+
         function markdownTitle() {
             const title = document.getElementById('title');
             console.log(title);
@@ -122,6 +134,7 @@
 
         window.addEventListener("load", markdownCode);
         window.addEventListener("load", markdownTitle);
+        window.addEventListener("load", filepath_load);
     </script>
 
 </body>
