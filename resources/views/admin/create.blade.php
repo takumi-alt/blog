@@ -40,7 +40,17 @@
                         <!-- 記事のpath -->
                         <div>
                             <p class="text-regal-white mb-0 mt-4">path</p>
-                            <input id="id" name="path" class="rounded-2xl w-full">
+                            <input id="path" name="path" class="rounded-2xl w-20">
+                        </div>
+                        <!-- id -->
+                        <div>
+                            <p class="text-regal-white mb-0 mt-4">id</p>
+                            <input id="id" name="id" class="rounded-2xl w-8">
+                        </div>
+                        <!-- created_at -->
+                        <div>
+                            <p class="text-regal-white mb-0 mt-4">created_at</p>
+                            <input id="time" name="created_at" class="rounded-2xl w-full">
                         </div>
                         <!-- 投稿status -->
                         <div>

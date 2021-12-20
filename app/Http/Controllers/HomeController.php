@@ -42,11 +42,12 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
+
         $user = Auth::user();
 
         $exist_post = Post::where('id', $data['id'])->where('content', $data['content'])->first();
         if (empty($exist_psot)) {
-            $new_post = Post::insertGetId(['title' => $data['title'], 'path' => $data['path'], 'filepath' => $data['filepath'], 'status' => $data['status'], 'content' => $data['content'], 'user_id' => $user['id']]);
+            $new_post = Post::insertGetId(['id' => $data['id'], 'title' => $data['title'], 'path' => $data['path'], 'filepath' => $data['filepath'], 'status' => $data['status'], 'content' => $data['content'], 'created_at' => $data['created_at'], 'user_id' => $user['id']]);
         } else {
             $new_post = $exist_post['id'];
         }
