@@ -2474,7 +2474,7 @@ var Blog = function Blog(props) {
       src: path,
       width: "600",
       height: "500",
-      "class": "mx-auto"
+      className: "mx-auto"
     });
 
     react_dom__WEBPACK_IMPORTED_MODULE_1__.render(element, document.getElementById('image'));
