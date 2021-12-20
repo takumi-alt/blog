@@ -2581,15 +2581,15 @@ var Home = function Home() {
           className: "w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center",
           children: posts.map(function (post) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-              className: "bg-regal-white w-84 h-60 m-8 rounded-2xl shadow-red",
+              className: "bg-regal-white w-84 h-64 m-8 rounded-2xl shadow-red",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-                className: "h-60 w-full items-end justify-center rounded-2xl",
+                className: "h-64 w-full items-end justify-center rounded-2xl",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
                   src: "/storage/".concat(post.filepath),
                   className: "block h-3/4 rounded-t-2xl"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
                   to: "/blog/".concat(post.path),
-                  className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-1/4 block",
+                  className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-semibold text-base h-1/4 block",
                   children: post.title
                 })]
               })

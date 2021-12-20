@@ -22,10 +22,13 @@ const Home = () => {
                 <div className="lg:w-4/5 bg-gray-200 mx-auto">
                     <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center">
                         {
-                            posts.map(post => <li key={post.id} className="bg-regal-white w-84 h-60 m-8 rounded-2xl shadow-red">
-                                <div className="h-60 w-full items-end justify-center rounded-2xl">
+                            posts.map(post => <li key={post.id} className="bg-regal-white w-84 h-64 m-8 rounded-2xl shadow-red">
+                                <div className="h-64 w-full items-end justify-center rounded-2xl">
                                     <img src={`/storage/${post.filepath}`} className="block h-3/4 rounded-t-2xl"></img>
-                                    <Link to={`/blog/${post.path}`} className="text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-1/4 block">{post.title}</Link>
+                                    {/* <div className="text-regal-black">
+                                        {post.created_at}
+                                    </div> */}
+                                    <Link to={`/blog/${post.path}`} className="text-regal-black bg-gray-300 rounded-b-2xl w-full font-semibold text-base h-1/4 block">{post.title}</Link>
                                 </div>
                                 </li>)
                         }

@@ -25,6 +25,10 @@
         </form>
         <img src="/storage/プログラミング.jpg" width="100" height="100">
         <a href="/storage/プログラミング.jpg">aaaa</a>
+
+        <div>
+            <a href="/top">DashBoadへ</a>
+        </div>
     </div>
 
 
