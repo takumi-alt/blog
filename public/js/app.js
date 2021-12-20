@@ -2560,6 +2560,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Home = function Home() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -2581,13 +2582,16 @@ var Home = function Home() {
           children: posts.map(function (post) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
               className: "bg-regal-white w-84 h-60 m-8 rounded-2xl shadow-red",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-                className: "h-60 w-full flex items-end justify-center",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                className: "h-60 w-full items-end justify-center rounded-2xl",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+                  src: "/storage/".concat(post.filepath),
+                  className: "block h-3/4 rounded-t-2xl"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
                   to: "/blog/".concat(post.path),
-                  className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-24",
+                  className: "text-regal-black bg-gray-300 rounded-b-2xl w-full font-black text-lg h-1/4 block",
                   children: post.title
-                })
+                })]
               })
             }, post.id);
           })
