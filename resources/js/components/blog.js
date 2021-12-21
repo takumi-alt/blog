@@ -55,7 +55,7 @@ const Blog = props => {
                     <ReactMarkdown className="text-regal-black">
                         {title}
                     </ReactMarkdown>
-                    <div id="image"></div>
+                    <div id="image" className="mb-4"></div>
                     <ReactMarkdown components={components} className="text-regal-black">
                         {content}
                     </ReactMarkdown>

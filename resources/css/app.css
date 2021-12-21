@@ -4,7 +4,7 @@
 
 @layer base {
     h1 {
-        @apply border-red-400 border-b-2 mb-4 pb-4 sm:text-3xl font-black;
+        @apply border-green-300 border-b-4 mb-4 pb-4 sm:text-3xl font-black;
     }
     h2 {
         @apply mt-4;
@@ -12,7 +12,7 @@
         @apply pl-8;
         @apply py-2;
         @apply border-l-8;
-        @apply border-red-400;
+        @apply border-green-300;
     }
     ul {
         @apply list-disc;

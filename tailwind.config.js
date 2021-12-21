@@ -44,6 +44,8 @@ module.exports = {
     boxShadow: {
         nomal: '15px 15px 0px 0 rgba(120, 118, 123, 0.5)',
         red: '15px 15px 0px 0 rgba(255, 96, 94)',
+        green: '15px 15px 0px 0 rgba(110, 190, 70, 0.5)',
+        purple: '15px 15px 0px 0px rgba(140, 20, 250, 0.7)'
     }
   },
   variants: {
