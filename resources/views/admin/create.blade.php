@@ -70,7 +70,7 @@
         <div class="bg-regal-black">
             <div class="bg-regal-white mx-6 mt-10 transform scale-60 -translate-y-6 -translate-x-52">
                 <!-- head部分 -->
-                <div class="flex justify-center items-center h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center">
+                <div class="flex justify-center items-center h-32 bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 text-center">
                     <h3 class="font-black text-6xl text-regal-white m-4">Engineer</h3>
                     <h3 class="font-black text-6xl text-regal-white m-4">Blog❕</h3>
                 </div>
