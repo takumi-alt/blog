@@ -17,6 +17,7 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/blog/" element={< Home />} />
+                <Route path="/public/blog/" element={< Home />} />
                 <Route path="/blog/:id" element={< Blog />} />
                 <Route path="/blog/contact/" element={< Contact />} />
                 {/* <Route path="/react/blog/:id" element={< Blog />} /> */}

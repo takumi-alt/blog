@@ -26,11 +26,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 // React
+Route::get('public/blog', function () {
+    return view('react');
+});
+
 Route::get('/blog', function () {
     return view('react');
 });
 
-Route::get('blog/{any}', function () {
+Route::get('/blog/{any}', function () {
     return view('react');
 })->where('any', '.*');
 
