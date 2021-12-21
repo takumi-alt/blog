@@ -23,13 +23,10 @@ const Blog = props => {
             setImg(res.data.posts.filepath);
         })
     }, []);
-    console.log(recode);
-    console.log(img);
     useEffect(() => {
         const path = `/storage/${img}`;
         const element = <img src={path} width="600" height="500" className="mx-auto"></img>
         ReactDOM.render(element, document.getElementById('image'));
-        console.log(path);
         }, [img])
 
         const components = {
@@ -59,6 +56,7 @@ const Blog = props => {
                     <ReactMarkdown components={components} className="text-regal-black">
                         {content}
                     </ReactMarkdown>
+                    <div className="m-0 h-4"></div>
                 </div>
 
         </main>

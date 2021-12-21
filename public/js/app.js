@@ -2467,8 +2467,6 @@ var Blog = function Blog(props) {
       setImg(res.data.posts.filepath);
     });
   }, []);
-  console.log(recode);
-  console.log(img);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var path = "/storage/".concat(img);
 
@@ -2480,7 +2478,6 @@ var Blog = function Blog(props) {
     });
 
     react_dom__WEBPACK_IMPORTED_MODULE_1__.render(element, document.getElementById('image'));
-    console.log(path);
   }, [img]);
   var components = {
     code: function code(_ref) {
@@ -2518,6 +2515,8 @@ var Blog = function Blog(props) {
         components: components,
         className: "text-regal-black",
         children: content
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "m-0 h-4"
       })]
     })
   });
