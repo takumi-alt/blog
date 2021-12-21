@@ -2284,12 +2284,12 @@ var Head = function Head() {
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "flex justify-center items-center h-32 bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 text-center",
+      className: "flex justify-center items-center h-32 bg-purple-600 text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-4xl sm:text-6xl text-green-300 m-2 sm:m-4",
+        className: "font-black text-5xl sm:text-6xl text-green-500 m-2 sm:m-4",
         children: next
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-4xl sm:text-6xl text-green-500 m-2 sm:m-4",
+        className: "font-black text-5xl sm:text-6xl text-green-500 m-2 sm:m-4",
         children: Blog
       })]
     })
@@ -2357,20 +2357,20 @@ var Navbar = function Navbar() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "bg-regal-white",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "bg-regal-white flex justify-center h-12 md:w-4/5 mx-auto",
+        className: "bg-regal-white flex justify-center h-8 sm:h-12 md:w-4/5 mx-auto",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: "/blog/",
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "home"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "search"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: '/blog/contact',
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-gray-300 flex-1",
           children: "contact"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-base sm:text-xl text-center border-l-2 border-r-2 border-gray-300 flex-1",
+          className: "text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-r-2 border-gray-300 flex-1",
           children: "info"
         })]
       })

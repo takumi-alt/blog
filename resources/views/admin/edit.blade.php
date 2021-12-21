@@ -69,9 +69,9 @@
         <div class="flex-1 bg-regal-black">
             <div class="bg-regal-white mx-6 mt-10 transform scale-60 -translate-y-24 -translate-x-52">
                 <!-- head部分 -->
-                <div class="flex justify-center items-center h-32 bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 text-center">
-                    <h3 class="font-black text-6xl text-regal-white m-4">Engineer</h3>
-                    <h3 class="font-black text-6xl text-regal-white m-4">Blog❕</h3>
+                <div class="flex justify-center items-center h-32 bg-purple-600 text-center">
+                    <h3 class="font-black text-6xl text-green-500 m-4">Engineer</h3>
+                    <h3 class="font-black text-6xl text-green-500 m-4">Blog❕</h3>
                 </div>
                 <!-- navタグ部分 -->
                 <div class="bg-regal-white">
