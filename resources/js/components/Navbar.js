@@ -10,7 +10,7 @@ const Navbar = () => {
                     <Link to={`/blog/`}  className="text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-gray-300 flex-1">home</Link>
                     <a className="text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-gray-300 flex-1">search</a>
                     <Link to={'/blog/contact'} className="text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-gray-300 flex-1">contact</Link>
-                    <a className="text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-r-2 border-gray-300 flex-1">info</a>
+                    <Link to={'blog/profile'} className="text-regal-black hover:bg-gray-300 ... cursor-pointer h-8 sm:h-12 font-mono font-black text-sm sm:text-xl text-center border-l-2 border-r-2 border-gray-300 flex-1">profile</Link>
                 </div>
             </div>
         </>

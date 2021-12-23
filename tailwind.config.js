@@ -45,7 +45,8 @@ module.exports = {
         nomal: '15px 15px 0px 0 rgba(120, 118, 123, 0.5)',
         red: '15px 15px 0px 0 rgba(255, 96, 94)',
         green: '15px 15px 0px 0 rgba(110, 190, 70, 0.5)',
-        purple: '15px 15px 0px 0px rgba(175, 25, 235)'
+        purple: '15px 15px 0px 0px rgba(175, 25, 235)',
+        purple2: '4px 4px 0px 0px rgba(110, 0, 225)'
     }
   },
   variants: {
