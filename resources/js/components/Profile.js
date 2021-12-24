@@ -19,15 +19,17 @@ const Profile = () => {
 
                     </p>
                 </div>
+                {/* language */}
                 <div className="lg:w-3/4 mx-auto mb-12">
                     <p className="text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2">Language</p>
-                    <p>
+                    <p className="md:text-lg">
                         HTML<br/>
                         CSS<br/>
                         PHP<br/>
                         Python<br/>
                     </p>
                 </div>
+                {/* Work */}
                 <div className="lg:w-3/4 mx-auto">
                     <p className="text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2">My Work</p>
                     <p></p>
