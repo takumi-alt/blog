@@ -5,15 +5,20 @@ import { Link } from 'react-router-dom';
 import '../../css/app.css'
 
 const Navbar = () => {
+    const[active, setActive] = useState(true);
     const[btn, setBtn] = useState(0);
 
     function handleClick() {
+        setActive(!active);
         setBtn(btn + 1);
     }
     console.log(btn)
 
     useEffect(() =>{
-        const element = <div><input type="text"></input></div>
+        const element = <div className="w-1/3 mx-auto bg-gray-200">
+            <input type="text" className="border-purple-600 border-2 w-64 rounded-lg"></input>
+            <button className="ml-4 bg-purple-600 rounded-lg text-regal-white w-20">検索</button>
+            </div>
         ReactDOM.render(element, document.getElementById("nav"));
     },[btn])
     
@@ -37,7 +42,7 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-            <div id="nav" className="hidden"></div>
+            <div id="nav" className={ active ? "hidden" : "py-2 bg-gray-200" }></div>
         </>
     )
 }

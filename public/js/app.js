@@ -2368,21 +2368,32 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Navbar = function Navbar() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
       _useState2 = _slicedToArray(_useState, 2),
-      btn = _useState2[0],
-      setBtn = _useState2[1];
+      active = _useState2[0],
+      setActive = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState4 = _slicedToArray(_useState3, 2),
+      btn = _useState4[0],
+      setBtn = _useState4[1];
 
   function handleClick() {
+    setActive(!active);
     setBtn(btn + 1);
   }
 
   console.log(btn);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
-        type: "text"
-      })
+    var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "w-1/3 mx-auto bg-gray-200",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+        type: "text",
+        className: "border-purple-600 border-2 w-64 rounded-lg"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+        className: "ml-4 bg-purple-600 rounded-lg text-regal-white w-20",
+        children: "\u691C\u7D22"
+      })]
     });
 
     react_dom__WEBPACK_IMPORTED_MODULE_1__.render(element, document.getElementById("nav"));
@@ -2421,7 +2432,7 @@ var Navbar = function Navbar() {
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       id: "nav",
-      className: "hidden"
+      className: active ? "hidden" : "py-2 bg-gray-200"
     })]
   });
 };
@@ -2451,8 +2462,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Profile = function Profile() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "bg-gray-200",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "w-2/3 mx-auto mt-12",
+      className: "w-2/3 mx-auto pt-12",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "mb-8",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {

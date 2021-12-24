@@ -3,8 +3,8 @@ import '../../css/app.css'
 
 const Profile = () => {
     return (
-        <div>
-            <div className="w-2/3 mx-auto mt-12">
+        <div className="bg-gray-200">
+            <div className="w-2/3 mx-auto pt-12">
                 {/* name,img */}
                 <div className="mb-8">
                     <img src="/storage/profile.jpg" className="w-32 h-32 mx-auto rounded-full"></img>
