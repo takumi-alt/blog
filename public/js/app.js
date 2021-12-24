@@ -2386,7 +2386,7 @@ var Navbar = function Navbar() {
   console.log(btn);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "w-1/3 mx-auto bg-gray-200",
+      className: "mx-auto bg-gray-200 text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
         type: "text",
         className: "border-purple-600 border-2 w-64 rounded-lg"

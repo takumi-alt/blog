@@ -15,7 +15,7 @@ const Navbar = () => {
     console.log(btn)
 
     useEffect(() =>{
-        const element = <div className="w-1/3 mx-auto bg-gray-200">
+        const element = <div className="mx-auto bg-gray-200 text-center">
             <input type="text" className="border-purple-600 border-2 w-64 rounded-lg"></input>
             <button className="ml-4 bg-purple-600 rounded-lg text-regal-white w-20">検索</button>
             </div>
