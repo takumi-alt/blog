@@ -27,6 +27,7 @@ module.exports = {
             'regal-black': '#303841',
             'regal-gray': '#aaaaaa',
             'regal-white': '#eeeeee',
+            'rgba': 'rgba(255, 255, 255, 0.7)'
         },
         lineHeight: {
             'extra-loose': '2.5',
@@ -54,9 +55,10 @@ module.exports = {
         nomal: '15px 15px 0px 0 rgba(120, 118, 123, 0.5)',
         red: '15px 15px 0px 0 rgba(255, 96, 94)',
         green: '15px 15px 0px 0 rgba(110, 190, 70, 0.5)',
-        purple: '15px 15px 0px 0px rgba(175, 25, 235)',
+        purple: '16px 16px 0px 0px rgba(175, 25, 235)',
         purple2: '4px 4px 0px 0px rgba(110, 0, 225)',
-        green: '8px 6px 0px 0px rgba(120, 225, 155)'
+        green: '8px 6px 0px 0px rgba(120, 225, 155)',
+        zero: '0px 0px 0px 0px',
     }
   },
   variants: {
