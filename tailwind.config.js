@@ -9,6 +9,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+        transitionDuration: {
+            '200': '200ms',
+            '400': '400ms',
+            '600': '600ms',
+            '800': '800ms',
+            '1200': '1200ms',
+            '1400': '1400ms',
+            '1600': '1600ms',
+        },
         colors: {
             'regal-red': '#ee6644',
             'regal-pink': '#ffdccc',
@@ -46,10 +55,13 @@ module.exports = {
         red: '15px 15px 0px 0 rgba(255, 96, 94)',
         green: '15px 15px 0px 0 rgba(110, 190, 70, 0.5)',
         purple: '15px 15px 0px 0px rgba(175, 25, 235)',
-        purple2: '4px 4px 0px 0px rgba(110, 0, 225)'
+        purple2: '4px 4px 0px 0px rgba(110, 0, 225)',
+        green: '8px 6px 0px 0px rgba(120, 225, 155)'
     }
   },
   variants: {
+      translate: ['hover', 'group-hover', 'focus'],
+      transform: ['hover', 'group-hover', 'focus'],
     extend: {},
   },
   plugins: [

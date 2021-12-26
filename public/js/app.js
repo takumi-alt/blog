@@ -2218,6 +2218,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/app.css */ "./resources/css/app.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -2237,61 +2245,65 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var Head = function Head() {
-  var enginier = ['E', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
-  var blog = ['B', 'l', 'o', 'g', '❕'];
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
-      next = _useState2[0],
-      setNext = _useState2[1];
+      span = _useState2[0],
+      setSpan = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState4 = _slicedToArray(_useState3, 2),
-      Blog = _useState4[0],
+      blog = _useState4[0],
       setBlog = _useState4[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setTimeout(function () {
-      var _loop = function _loop(i) {
-        setTimeout(function () {
-          return setNext(function (next) {
-            return next + enginier[i];
-          });
-        }, i * 150);
-      };
+  var engineers = ['e', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
+  var blogs = ['b', 'l', 'o', 'g']; // engineer
 
-      for (var i = 0; i < enginier.length; i++) {
-        _loop(i);
-      }
-    }, 1000);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var _loop = function _loop(i) {
+      var engineer = engineers[i];
+      var cls = "font-black text-4xl sm:text-5xl text-green-500 transform group-hover:-translate-y-5 transition duration-".concat((i + 1) * 200);
+
+      var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+        className: cls,
+        children: engineer
+      });
+
+      setSpan(function (prevArray) {
+        return [].concat(_toConsumableArray(prevArray), [element]);
+      });
+    };
+
+    for (var i = 0; i < engineers.length; i++) {
+      _loop(i);
+    }
+  }, []); // blog
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var _loop2 = function _loop2(i) {
+      var blog = blogs[i];
+      var cls = "font-black text-4xl sm:text-5xl text-green-500 transform group-hover:-translate-y-5 transition duration-".concat((i + 1) * 200);
+
+      var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+        className: cls,
+        children: blog
+      });
+
+      setBlog(function (prevArray) {
+        return [].concat(_toConsumableArray(prevArray), [element]);
+      });
+    };
+
+    for (var i = 0; i < blogs.length; i++) {
+      _loop2(i);
+    }
   }, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setTimeout(function () {
-      var _loop2 = function _loop2(i) {
-        setTimeout(function () {
-          return setBlog(function (Blog) {
-            return Blog + blog[i];
-          });
-        }, i * 150);
-      };
-
-      for (var i = 0; i < blog.length; i++) {
-        _loop2(i);
-      }
-    }, 3000);
-  }, []); // bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800
-  // bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
-
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "flex justify-center items-center h-32 bg-purple-600 text-center",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-5xl sm:text-6xl text-green-500 m-2 sm:m-4",
-        children: next
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        className: "font-black text-5xl sm:text-6xl text-green-500 m-2 sm:m-4",
-        children: Blog
-      })]
+      id: "id",
+      className: "flex justify-center items-center h-32 bg-purple-600 text-center group",
+      children: [span, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+        className: "mr-4"
+      }), blog]
     })
   });
 };
@@ -2463,42 +2475,45 @@ __webpack_require__.r(__webpack_exports__);
 var Profile = function Profile() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     className: "bg-gray-200",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "w-2/3 mx-auto pt-12",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "mb-8",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          src: "/storage/profile.jpg",
-          className: "w-32 h-32 mx-auto rounded-full"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          className: "text-center font-bold text-xl",
-          children: "TAKUMI MIMA"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "lg:w-3/4 mx-auto mb-12",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
-          children: "About"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
-          className: "border-t-2 border-b-2 border-green-500 py-4 md:text-lg text-regal-black",
-          children: ["\u3054\u8A2A\u554F\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\u3002\u30B5\u30A4\u30C8\u904B\u55B6\u8005\u306E\u7F8E\u99AC \u5DE7\u3068\u7533\u3057\u307E\u3059\u3002", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u5927\u962A\u5E9C\u306E\u79C1\u7ACB\u5927\u5B66\u306B\u901A\u3046\u5927\u5B66\u4E09\u5E74\u751F\u3067\u3059\u3002\u5C06\u6765\u306F\u30A8\u30F3\u30B8\u30CB\u30A2\u3068\u3057\u3066\u6D3B\u8E8D\u3057\u305F\u3044\u3068\u601D\u3044\u3001\u72EC\u5B66\u3067\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u3092\u52C9\u5F37\u4E2D\u3067\u3059\u3002", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u304A\u554F\u3044\u5408\u308F\u305B\u306F\u3001Contact\u307E\u305F\u306Finstagram\u3001twitter\u304B\u3089\u304A\u9858\u3044\u3057\u307E\u3059\u3002"]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "lg:w-3/4 mx-auto mb-12",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
-          children: "Language"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
-          className: "md:text-lg",
-          children: ["HTML", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "CSS", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "PHP", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "Python", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {})]
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "w-3/4 sm:w-2/3 mx-auto pt-12",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "lg:w-3/4 mx-auto",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
-          children: "My Work"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {})]
-      })]
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "mb-8",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            src: "/storage/profile.jpg",
+            className: "mb-4 w-32 h-32 mx-auto rounded-full shadow-green"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            className: "text-center font-bold text-xl text-green-500",
+            children: "TAKUMI MIMA"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "mx-auto mb-12",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
+            children: "About"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+            className: "border-t-2 border-b-2 border-green-500 py-4 md:text-lg text-regal-black",
+            children: ["\u3054\u8A2A\u554F\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\u3002\u30B5\u30A4\u30C8\u904B\u55B6\u8005\u306E\u7F8E\u99AC \u5DE7\u3068\u7533\u3057\u307E\u3059\u3002", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u5927\u962A\u5E9C\u306E\u79C1\u7ACB\u5927\u5B66\u306B\u901A\u3046\u5927\u5B66\u4E09\u5E74\u751F\u3067\u3059\u3002\u5C06\u6765\u306F\u30A8\u30F3\u30B8\u30CB\u30A2\u3068\u3057\u3066\u6D3B\u8E8D\u3057\u305F\u3044\u3068\u601D\u3044\u3001\u72EC\u5B66\u3067\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u3092\u52C9\u5F37\u4E2D\u3067\u3059\u3002", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u304A\u554F\u3044\u5408\u308F\u305B\u306F\u3001Contact\u307E\u305F\u306Finstagram\u3001twitter\u304B\u3089\u304A\u9858\u3044\u3057\u307E\u3059\u3002"]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "mx-auto mb-12",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
+            children: "Language"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+            className: "md:text-lg",
+            children: ["HTML", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "CSS", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "PHP", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "Python", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {})]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "mx-auto",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
+            children: "My Work"
+          })
+        })]
+      })
     })
   });
 };
