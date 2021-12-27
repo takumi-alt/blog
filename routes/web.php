@@ -17,7 +17,7 @@ use Laravel\Ui\Presets\React;
 */
 
 Route::get('/', function () {
-    return view('auth/login');
+    return redirect()->route('blog');
 });
 
 Auth::routes();
@@ -32,7 +32,7 @@ Route::get('public/blog', function () {
 
 Route::get('/blog', function () {
     return view('react');
-});
+})->name('blog');
 
 Route::get('/blog/{any}', function () {
     return view('react');
