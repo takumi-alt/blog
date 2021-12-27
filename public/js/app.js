@@ -2518,12 +2518,24 @@ var Profile = function Profile() {
             className: "md:text-lg",
             children: ["HTML", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "CSS", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "PHP", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "Python", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {})]
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: "mx-auto",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
             className: "text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2",
             children: "My Work"
-          })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "border-t-2 border-b-2 border-green-500 py-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+              src: "/storage/blog2.png",
+              className: "shadow-xl mb-4"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "text-lg md:text-xl text-purple-500 bg-green-500 text-center w-48 shadow-green",
+              children: "No.1 engineer blog"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+              className: "md:text-lg",
+              children: ["\u3053\u3061\u3089\u306E\u30D6\u30ED\u30B0\u306F\u79C1\u304C\u521D\u3081\u3066\u672C\u683C\u7684\u306B\u4F5C\u88FD\u3057\u305F\u30B5\u30A4\u30C8\u306B\u306A\u308A\u307E\u3059\u3002", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "CRUD\u6A5F\u80FD\u3092\u642D\u8F09\u3057\u3066\u304A\u308A\u3001SPA\u5316\u3082\u3057\u3066\u3044\u307E\u3059\u3002", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), "\u4F7F\u7528\u6280\u8853\u3068\u3057\u3066\u306F\u4E3B\u306B\u3001Laravel, React, Tailwindcss\u3092\u7528\u3044\u3066\u3044\u307E\u3059\u3002"]
+            })]
+          })]
         })]
       })
     })

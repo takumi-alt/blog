@@ -55,6 +55,8 @@ module.exports = {
     },
     boxShadow: {
         nomal: '15px 15px 0px 0 rgba(120, 118, 123, 0.5)',
+        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
         red: '15px 15px 0px 0 rgba(255, 96, 94)',
         green: '15px 15px 0px 0 rgba(110, 190, 70, 0.5)',
         purple: '16px 16px 0px 0px rgba(175, 25, 235)',

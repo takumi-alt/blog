@@ -87,7 +87,7 @@
                     <div class="bg-gray-200 pt-8 w-4/5 mx-auto">
                         <!-- title部分 -->
                         <div id="title_markdown" class=""></div>
-                        <img id="image" class="mx-auto">
+                        <img id="image" width="600" class="mx-auto">
                         <!-- 本文部分 -->
                         <div id="code_markdown" class=""></div>
                     </div>

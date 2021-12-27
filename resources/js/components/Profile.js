@@ -33,6 +33,15 @@ const Profile = () => {
                 {/* Work */}
                 <div className="mx-auto">
                     <p className="text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2">My Work</p>
+                    <div className="border-t-2 border-b-2 border-green-500 py-4">
+                        <img src="/storage/blog2.png" className="shadow-xl mb-4"></img>
+                        <p className="text-lg md:text-xl text-purple-500 bg-green-500 text-center w-48 shadow-green">No.1 engineer blog</p>
+                        <p className="md:text-lg">
+                            こちらのブログは私が初めて本格的に作製したサイトになります。<br/>
+                            CRUD機能を搭載しており、SPA化もしています。<br/>
+                            使用技術としては主に、Laravel, React, Tailwindcssを用いています。
+                        </p>
+                    </div>
                 </div>
 
                 </div>
