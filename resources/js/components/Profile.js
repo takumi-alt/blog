@@ -8,7 +8,7 @@ const Profile = () => {
                 {/* name,img */}
                 <div className="lg:w-3/4 mx-auto">
                 <div className="mb-8">
-                    <img src="/storage/profile.jpg" className="mb-4 w-32 h-32 mx-auto rounded-full shadow-green"></img>
+                    <img src="/storage/profile.jpg" className="mb-4 w-32 h-32 mx-auto rounded-full"></img>
                     <p className="text-center font-bold text-xl text-green-500">TAKUMI MIMA</p>
                 </div>
                 <div className="mx-auto mb-12">

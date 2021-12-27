@@ -2483,7 +2483,7 @@ var Profile = function Profile() {
           className: "mb-8",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
             src: "/storage/profile.jpg",
-            className: "mb-4 w-32 h-32 mx-auto rounded-full shadow-green"
+            className: "mb-4 w-32 h-32 mx-auto rounded-full"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
             className: "text-center font-bold text-xl text-green-500",
             children: "TAKUMI MIMA"
@@ -2723,7 +2723,7 @@ var Home = function Home() {
           className: "w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center",
           children: posts.map(function (post) {
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-              className: "bg-regal-white w-84 h-64 m-8 shadow-purple transition duration-500 rounded-xl transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero",
+              className: "bg-regal-white w-84 h-64 m-8 shadow-purple3 transition duration-500 rounded-xl transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
                 to: "/blog/".concat(post.path),
                 className: "h-64 w-full items-end justify-center rounded-xl",

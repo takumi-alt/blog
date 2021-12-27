@@ -57,6 +57,7 @@ module.exports = {
         green: '15px 15px 0px 0 rgba(110, 190, 70, 0.5)',
         purple: '16px 16px 0px 0px rgba(175, 25, 235)',
         purple2: '4px 4px 0px 0px rgba(110, 0, 225)',
+        purple3: '4px 4px 0px 0px rgba(150, 0, 255), 8px 8px 0px 0px rgba(150, 0, 255, 0.8), 12px 12px 0px 0px rgba(150, 0, 255, 0.6), 16px 16px 0px 0px rgba(150, 0, 255, 0.4)',
         green: '8px 6px 0px 0px rgba(120, 225, 155)',
         zero: '0px 0px 0px 0px',
     }

@@ -22,7 +22,7 @@ const Home = () => {
                 <div className="lg:w-4/5 bg-gray-200 mx-auto">
                     <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center">
                         {
-                            posts.map(post => <li key={post.id} className="bg-regal-white w-84 h-64 m-8 shadow-purple transition duration-500 rounded-xl transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero">
+                            posts.map(post => <li key={post.id} className="bg-regal-white w-84 h-64 m-8 shadow-purple3 transition duration-500 rounded-xl transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero">
                                 <Link to={`/blog/${post.path}`} className="h-64 w-full items-end justify-center rounded-xl">
                                     <img src={`/storage/${post.filepath}`} className="block rounded-xl"></img>
                                     {/* <div className="text-regal-black">
