@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useState, useEffect} from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import '../../css/app.css';
@@ -25,7 +25,7 @@ const Blog = props => {
     }, []);
     useEffect(() => {
         const path = `/storage/${img}`;
-        const element = <img src={path} width="600" height="500" className="mx-auto"></img>
+        const element = <img src={path} width="600" className="mx-auto"></img>
         ReactDOM.render(element, document.getElementById('image'));
         }, [img])
 

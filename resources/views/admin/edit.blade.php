@@ -61,35 +61,34 @@
                         </div>
                     </div>
                     <textarea id="user_answer_code" name="content" cols="76" rows="17" class="block rounded-2xl">{{ $update['content'] }}</textarea>
-                    <button type="submit" class="btn block">更新</button>
+                    <button type="submit" class="block bg-regal-white font-black rounded-xl text-regal-black w-16 h-8 mt-4">更新</button>
                 </form>
             </div>
         </div>
         <!-- プレビュー -->
         <div class="flex-1 bg-regal-black">
-            <div class="bg-regal-white mx-6 mt-10 transform scale-60 -translate-y-24 -translate-x-52">
+            <div class="bg-regal-white mx-6 mt-10 transform scale-60 origin-top-left">
                 <!-- head部分 -->
                 <div class="flex justify-center items-center h-32 bg-purple-600 text-center">
-                    <h3 class="font-black text-6xl text-green-500 m-4">Engineer</h3>
-                    <h3 class="font-black text-6xl text-green-500 m-4">Blog❕</h3>
+                    <span class="font-black text-5xl text-green-500">engineer blog</span>
                 </div>
                 <!-- navタグ部分 -->
                 <div class="bg-regal-white">
                     <div class="bg-regal-white flex justify-center h-12 w-2/3 mx-auto">
-                        <p class="text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">home</p>
-                        <p class="text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">search</p>
-                        <p class="text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">contact</p>
-                        <p class="text-regal-black hover:bg-gray-300 ... cursor-pointer h-12 font-mono font-black text-xl my-auto border-l-2 border-r-2 border-gray-300 pl-24 pr-24">info</p>
+                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">home</p>
+                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">search</p>
+                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">contact</p>
+                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-r-2 border-gray-300 pl-24 pr-24">info</p>
                     </div>
                 </div>
                 <div class="bg-gray-200">
                     <div class="bg-gray-200 pt-8 w-4/5 mx-auto">
                         <!-- title部分 -->
-                        <div id="title_markdown" class="">title</div>
+                        <div id="title_markdown" class=""></div>
                         <!-- アイキャッチ画像部分 -->
                         <img id="image" width="600" class="mx-auto">
                         <!-- 本文部分 -->
-                        <div id="code_markdown" class="">hello</div>
+                        <div id="code_markdown" class=""></div>
                     </div>
                 </div>
             </div>

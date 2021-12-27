@@ -12,15 +12,20 @@ const Navbar = () => {
         setActive(!active);
         setBtn(btn + 1);
     }
-    console.log(btn)
 
+    const [pass, setPass] = useState('');
+    const handleNameChange = (event) => {
+        setPass(event.target.value)
+    }
+    // searchボタンが押されたときの処理
     useEffect(() =>{
         const element = <div className="mx-auto bg-gray-200 text-center">
-            <input type="text" className="border-purple-600 border-2 w-64 rounded-lg"></input>
+            <input value={pass} onChange={handleNameChange} type="text" className="border-purple-600 border-2 w-64 rounded-lg"></input>
             <button className="ml-4 bg-purple-600 rounded-lg text-regal-white w-20">検索</button>
             </div>
         ReactDOM.render(element, document.getElementById("nav"));
     },[btn])
+    console.log(pass)
     
     return (
         <>

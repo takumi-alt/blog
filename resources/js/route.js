@@ -9,6 +9,7 @@ import Hoot from './components/Hoot';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import Search from './components/Search';
 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
                 <Route path="/blog/:id" element={< Blog />} />
                 <Route path="/blog/contact/" element={< Contact />} />
                 <Route path="/blog/profile" element={< Profile />} />
-                {/* <Route path="/react/blog/:id" element={< Blog />} /> */}
+                <Route path="/blog/search/" element={< Search />} />
             </Routes>
             <Hoot />
         </div>
