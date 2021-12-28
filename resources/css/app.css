@@ -21,20 +21,6 @@
     pre {
         @apply rounded-2xl;
     }
-    .nav {
-        @apply text-regal-black;
-        @apply hover:bg-gray-300;
-        @apply cursor-pointer;
-        @apply h-12;
-        @apply font-mono;
-        @apply font-black;
-        @apply text-xl;
-        @apply my-auto;
-        @apply border-l-2;
-        @apply border-gray-300;
-        @apply pl-24;
-        @apply pr-24;
-    }
     .nav-button {
         @apply text-regal-black h-full w-full font-mono text-sm sm:text-xl hover:bg-green-400 duration-1000;
     }
