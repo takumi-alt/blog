@@ -33,7 +33,7 @@ const Head = () => {
 
     return (
         <>
-            <div id="id" className="flex justify-center items-center h-32 bg-purple-600 text-center hover:bg-purple-700 group">
+            <div id="id" className="flex justify-center items-center h-32 bg-purple-600 text-center group">
                 {span}
                 <span className="mr-4"></span>
                 {blog}

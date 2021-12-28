@@ -35,4 +35,7 @@
         @apply pl-24;
         @apply pr-24;
     }
+    .nav-button {
+        @apply text-regal-black h-full w-full font-mono text-sm sm:text-xl hover:bg-green-400 duration-1000;
+    }
 }

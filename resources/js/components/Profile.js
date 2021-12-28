@@ -2,6 +2,7 @@ import React from 'react'
 import '../../css/app.css'
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
 
 const Profile = () => {
     return (
@@ -15,8 +16,9 @@ const Profile = () => {
                             <img src="/storage/profile.jpg" className="mb-4 w-32 h-32 mx-auto rounded-full"></img>
                             <p className="text-center font-bold text-xl text-green-500 mb-2">TAKUMI MIMA</p>
                             <div className="w-32 mx-auto flex justify-center">
-                                <a className="w-16 text-purple-400 text-3xl mx-auto"><FaTwitter className="mx-auto"/></a>
-                                <a className="w-16 text-purple-400 text-3xl mx-auto"><FaInstagram className="mx-auto"/></a>
+                                <a className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaTwitter className="mx-auto"/></a>
+                                <a className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaInstagram className="mx-auto"/></a>
+                                <a className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaGithub className="mx-auto"/></a>
                             </div>
                         </section>
                         
@@ -37,10 +39,10 @@ const Profile = () => {
                         <section className="mx-auto mb-12 md:w-1/3 md:pl-20">
                             <p className="text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2">Language</p>
                             <p className="md:text-lg border-t-2 border-green-500">
-                                ◆HTML<br/>
-                                ◆CSS<br/>
-                                ◆PHP<br/>
-                                ◆Python<br/>
+                                ◆ HTML<br/>
+                                ◆ CSS<br/>
+                                ◆ PHP<br/>
+                                ◆ Python<br/>
                             </p>
                         </section>
                     </div>

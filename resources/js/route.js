@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Blog from './components/blog';
 import Home from './components/home';
 import Head from './components/Head';
-import Hoot from './components/Hoot';
+import Hoot from './components/Hooter';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
