@@ -24,6 +24,9 @@
         <!-- 記入欄 -->
         <div class="bg-regal-black border-r-2 border-gray-600">
             <div class="mx-6">
+                <button class="bg-regal-white w-24 h-8 mt-4 rounded-lg">
+                    <a href="/top" class="w-full h-full text-regal-black">DashBoadへ</a>
+                </button>
                 <form action="/store" method="POST">
                     @csrf
                     <div>
@@ -64,6 +67,7 @@
                     <textarea id="user_answer_code" name="content" cols="76" rows="17" class="block rounded-2xl"></textarea>
                     <button type="submit" class="block bg-regal-white font-black rounded-xl text-regal-black w-16 h-8 mt-4">公開</button>
                 </form>
+
             </div>
         </div>
         <!-- プレビュー -->

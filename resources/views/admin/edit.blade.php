@@ -23,6 +23,9 @@
         <!-- 記入欄 -->
         <div class="flex-1 bg-regal-black border-r-2 border-gray-600">
             <div class="mx-6">
+                <button class="bg-regal-white w-24 h-8 mt-4 rounded-lg">
+                    <a href="/top" class="w-full h-full text-regal-black">DashBoadへ</a>
+                </button>
                 <form action="{{ route('update', ['id' => $update['id'] ]) }}" method="POST">
                     @csrf
                     <div>
