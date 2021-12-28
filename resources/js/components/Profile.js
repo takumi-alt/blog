@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../css/app.css'
+import {FaInstagram} from 'react-icons/fa';
+import {FaTwitter} from 'react-icons/fa';
 
 const Profile = () => {
     return (
@@ -9,7 +11,11 @@ const Profile = () => {
                 <div className="lg:w-3/4 mx-auto">
                 <div className="mb-8">
                     <img src="/storage/profile.jpg" className="mb-4 w-32 h-32 mx-auto rounded-full"></img>
-                    <p className="text-center font-bold text-xl text-green-500">TAKUMI MIMA</p>
+                    <p className="text-center font-bold text-xl text-green-500 mb-2">TAKUMI MIMA</p>
+                    <div className="w-32 mx-auto flex justify-center">
+                        <a className="w-16 text-purple-400 text-3xl mx-auto"><FaTwitter className="mx-auto"/></a>
+                        <a className="w-16 text-purple-400 text-3xl mx-auto"><FaInstagram className="mx-auto"/></a>
+                    </div>
                 </div>
                 <div className="mx-auto mb-12">
                     <p className="text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2">About</p>
