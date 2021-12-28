@@ -2261,7 +2261,7 @@ var Head = function Head() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var _loop = function _loop(i) {
       var engineer = engineers[i];
-      var cls = "font-black text-4xl sm:text-5xl text-green-500 transform group-hover:-translate-y-5 transition duration-".concat((i + 1) * 200);
+      var cls = "font-black text-4xl sm:text-5xl text-regal-white transform group-hover:-translate-y-5 transition duration-".concat((i + 1) * 200);
 
       var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
         className: cls,
@@ -2281,7 +2281,7 @@ var Head = function Head() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var _loop2 = function _loop2(i) {
       var blog = blogs[i];
-      var cls = "font-black text-4xl sm:text-5xl text-green-500 transform group-hover:-translate-y-5 transition duration-".concat((i + 1) * 200);
+      var cls = "font-black text-4xl sm:text-5xl text-regal-white transform group-hover:-translate-y-5 transition duration-".concat((i + 1) * 200);
 
       var element = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
         className: cls,
@@ -2300,7 +2300,7 @@ var Head = function Head() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       id: "id",
-      className: "flex justify-center items-center h-32 bg-purple-600 text-center group",
+      className: "flex justify-center items-center h-32 bg-purple-600 text-center hover:bg-purple-700 group",
       children: [span, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
         className: "mr-4"
       }), blog]
