@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
 import '../../css/app.css'
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
     useEffect(() =>{
         const element = <div className="mx-auto bg-gray-200 text-center">
             <input value={pass} onChange={handleNameChange} type="text" className="border-purple-600 border-2 w-64 rounded-lg"></input>
-            <button className="ml-4 bg-purple-600 rounded-lg text-regal-white w-20">検索</button>
+            <button className="ml-4 bg-purple-600 rounded-lg text-regal-white w-20 h-6"><FaSearch className="mx-auto"/></button>
             </div>
         ReactDOM.render(element, document.getElementById("nav"));
     },[btn])
