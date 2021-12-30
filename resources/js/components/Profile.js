@@ -54,9 +54,11 @@ const Profile = () => {
                         <p className="text-xl font-medium w-32 bg-purple-500 text-center rounded-lg shadow-purple2">My Work</p>
                         <div className="border-t-2 border-b-2 border-green-500 py-4 md:flex justify-between">
                             <div className="md:w-2/5">
-                                <img src="/storage/blog2.png" className="shadow-xl mb-4"></img>
+                                <a href="https://engineeeer.site/blog">
+                                    <img src="/storage/blog2.png" className="shadow-xl mb-4 hover:shadow-3xl duration-1000"></img>
+                                </a>
                                 <p className="text-lg md:text-xl text-purple-500 bg-green-500 text-center w-48 shadow-green">No.1 engineer blog</p>
-                                <p className="">
+                                <p>
                                     こちらのブログは私が初めて本格的に作製したサイトになります。<br/>
                                     CRUD機能を搭載しており、SPA化もしています。<br/>
                                     使用技術としては主に、Laravel, React, Tailwindcssを用いています。
