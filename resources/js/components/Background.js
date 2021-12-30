@@ -4,7 +4,7 @@ import '../../css/app.css'
 const Background = () => {
     return (
             <div className="">
-                <span className="w-24 h-24 bg-purple-400 rounded-lg animate-rotate2 absolute -bottom-110 left-0 delay-2000"></span>
+                <span className="w-24 h-24 bg-purple-400 rounded-lg animate-rotate3 absolute -bottom-110 left-0 delay-2000"></span>
                 <span className="w-6 h-6 bg-purple-400 rounded-sm animate-rotate4 absolute -bottom-110 left-8 delay-500"></span>
                 <span className="w-16 h-16 md:w-48 md:h-48 bg-purple-400 rounded-xl animate-rotate6 absolute -bottom-110 left-20 delay-1000"></span>
                 <span className="w-24 h-24 bg-purple-400 rounded-xl animate-rotate2 absolute -bottom-110 left-64"></span>
