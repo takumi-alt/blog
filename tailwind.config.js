@@ -47,12 +47,35 @@ module.exports = {
             '96': '24rem',
             '110': '30rem',
         },
+        transitonDelay: {
+            '2000': '2000ms',
+            '3000': '3000ms',
+            '4000': '4000ms',
+        },
+        animation: {
+            'rotate1': 'rotate 5s linear infinite',
+            'rotate2': 'rotate 7s linear infinite',
+            'rotate3': 'rotate 9s linear infinite',
+            'rotate2': 'rotate 11s linear infinite',
+            'rotate4': 'rotate 15s linear infinite',
+            'rotate5': 'rotate 18s linear infinite',
+            'rotate6': 'rotate 22s linear infinite',
+            'rotate7': 'rotate 25s linear infinite',
+            'rotate8': 'rotate 27s linear infinite',
+        },
+        keyframes: {
+            rotate: {
+                '0%': {transform: 'translateY(0) rotate(0deg)', opacity: '0.8'},
+                '100%': {transform: 'translateY(-2000px) rotate(720deg)', opacity: '0.3'}
+            },
+        },
         
     },
     borderRadius: {
         'part1': '50% 50% 50% 70%/50% 50% 70% 60%',
         'part2': '80% 30% 50% 50%/50%',
         'part3': '40% 40% 50% 40%/30% 50% 50% 50%',
+        'fish': '100px 0px 0px 100px/30px 0px 0px 30px',
         'sm': '0.125rem',
         default: '0.25rem',
         default: '4px',

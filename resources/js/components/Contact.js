@@ -1,9 +1,11 @@
 import React from 'react'
 import '../../css/app.css'
+import Background from './Background'
 
 const Contact = () => {
     return (
-        <div className="bg-gray-200 mx-auto">
+        <div className="bg-gray-200 mx-auto relative overflow-hidden">
+            < Background />
             <div className="md:w-4/5 mx-auto px-4 pt-12">
 
                 <form action="/api/contact" method="POST">

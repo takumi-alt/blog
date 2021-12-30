@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Search from './components/Search';
+import Background from './components/Background';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
                 <Route path="/blog/contact/" element={< Contact />} />
                 <Route path="/blog/profile" element={< Profile />} />
                 <Route path="/blog/search/" element={< Search />} />
+                <Route path="/blog/back/" element={< Background />} />
             </Routes>
             <Hoot />
         </div>

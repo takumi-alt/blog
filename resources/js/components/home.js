@@ -3,6 +3,7 @@ import {Routes, Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import "../../css/app.css";
+import Background from './Background';
 
 const Home = () => {
 
@@ -17,7 +18,8 @@ const Home = () => {
     
 
     return (
-        <div>
+        <div className="relative overflow-hidden">
+            < Background />
             <main className="bg-gray-200 text-center">
                 <div className="lg:w-4/5 bg-gray-200 mx-auto">
                     <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center">

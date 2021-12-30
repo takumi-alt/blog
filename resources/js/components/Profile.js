@@ -3,12 +3,14 @@ import '../../css/app.css'
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
+import Background from './Background';
 
 const Profile = () => {
     return (
-        <div className="bg-gray-200">
+        <div className="bg-gray-200 relative overflow-hidden">
+            <Background />
             <div className="w-3/4 lg:w-5/6 mx-auto pt-12">
-                <div className="mx-auto">
+                <div className="mx-auto hover">
 
                     <div className="w-full">
                         {/* name,img,icon*/}
