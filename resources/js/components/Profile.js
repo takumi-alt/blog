@@ -20,7 +20,7 @@ const Profile = () => {
                             <div className="w-32 mx-auto flex justify-center">
                                 <a className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaTwitter className="mx-auto"/></a>
                                 <a className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaInstagram className="mx-auto"/></a>
-                                <a className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaGithub className="mx-auto"/></a>
+                                <a href="https://github.com/takumi-alt/" className="w-16 text-purple-400 hover:text-green-500 transition duration-500 text-3xl mx-auto"><FaGithub className="mx-auto"/></a>
                             </div>
                         </section>
                         
@@ -43,6 +43,7 @@ const Profile = () => {
                             <p className="md:text-lg border-t-2 border-green-500">
                                 ◆ HTML<br/>
                                 ◆ CSS<br/>
+                                ◆ Javascript<br/>
                                 ◆ PHP<br/>
                                 ◆ Python<br/>
                             </p>
