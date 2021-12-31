@@ -3,21 +3,25 @@ import '../../css/app.css'
 import Background from './Background'
 
 const Contact = () => {
+    // POST先のpathを管理
     const true_path = "/api/contact"
     const false_path = ""
     const [path, setPath] = useState(`${true_path}`)
     const [method, setMethod] = useState("POST")
     
+    // 1つでもfalseがあれば、preventDefaultする
     const [active_name, setActive_name] = useState(true)
     const [active_mail, setActive_mail] = useState(true)
     const [active_title, setActive_title] = useState(true)
     const [active_content, setActive_content] = useState(true)
 
+    // contactのinputのvalue
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
 
+    // 入植した内容をstateで管理
     const handleChange = (event) => {
         switch (event.target.name) {
           case 'name':
@@ -37,6 +41,7 @@ const Contact = () => {
         }
       };
 
+    //   preventDefaultするかどうかの処理
       const check = (e) => {
           if(name == '' || mail == '' || title == '' || content == '') {
               setActive_name(false)
@@ -50,9 +55,6 @@ const Contact = () => {
           
         }
                     
-
-
-
     return (
         <div className="bg-gray-200 mx-auto relative overflow-hidden">
             < Background />
