@@ -14,6 +14,6 @@ class ApiController extends Controller
 
         $new_contact = Contact::insertGetId(['name' => $data['name'], 'mail' => $data['mail'], 'title' => $data['title'], 'content' => $data['content']]);
 
-        return redirect('/react');
+        return redirect('/blog/contact');
     }
 }
