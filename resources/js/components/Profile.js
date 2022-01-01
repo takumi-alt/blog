@@ -55,7 +55,7 @@ const Profile = () => {
                         <div className="border-t-2 border-b-2 border-green-500 py-4 md:flex justify-between">
                             <div className="md:w-2/5">
                                 <a href="https://engineeeer.site/blog">
-                                    <img src="/storage/blog2.png" className="shadow-xl mb-4 hover:shadow-3xl duration-1000"></img>
+                                    <img src="/storage/engineer_blog.png" className="shadow-xl mb-4 hover:shadow-3xl duration-1000"></img>
                                 </a>
                                 <p className="text-lg md:text-xl text-purple-500 bg-green-500 text-center w-48 shadow-green">No.1 engineer blog</p>
                                 <p>
