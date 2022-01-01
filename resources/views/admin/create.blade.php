@@ -74,8 +74,11 @@
         <div class="bg-regal-black">
             <div class="bg-regal-white mx-6 mt-10 transform scale-60 origin-top-left">
                 <!-- head部分 -->
-                <div class="flex justify-center items-center h-32 bg-purple-600 text-center">
-                    <span class="font-black text-5xl text-green-500">engineer blog</span>
+                <div class="flex justify-center items-center h-32 bg-purple-600 text-center relative">
+                    <div class="w-24 h-24 rounded-part1 bg-purple-300 absolute top-0 left-4"></div>
+                    <div class="w-24 h-24 rounded-part2 bg-purple-400 absolute bottom-0 left-32"></div>
+                    <div class="w-24 h-24 rounded-part3 bg-purple-500 absolute top-2 left-60"></div>
+                    <span class="font-black text-5xl text-regal-white">engineer blog</span>
                 </div>
                 <!-- navタグ部分 -->
                 <div class="bg-regal-white">
