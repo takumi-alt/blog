@@ -37,9 +37,12 @@ module.exports = {
             '1/9':'9.1111111%',
         },
         spacing: {
+            '14': '3.6rem',
             '18': '4.8rem',
+            '34': '8.4rem',
             '45': '11.2rem',
             '52': '13rem',
+            '58': '15.74rem',
             '72': '18rem',
             '84': '21rem',
             '92': '22rem',
@@ -66,7 +69,7 @@ module.exports = {
         keyframes: {
             rotate: {
                 '0%': {transform: 'translateY(0) rotate(0deg)', opacity: '0.8'},
-                '100%': {transform: 'translateY(-2000px) rotate(720deg)', opacity: '0.3'}
+                '100%': {transform: 'translateY(-2500px) rotate(720deg)', opacity: '0.3'}
             },
         },
         
@@ -108,9 +111,11 @@ module.exports = {
   variants: {
       translate: ['hover', 'group-hover', 'focus'],
       transform: ['hover', 'group-hover', 'focus'],
+      transitionDelay: ['responsive', 'hover', 'focus'],
     extend: {},
   },
   plugins: [
+    require("tailwindcss-animation-delay"),
     plugin(function({ addBase, config }) {
         addBase({
           'h1': { fontSize: config('theme.fontSize.xl') },

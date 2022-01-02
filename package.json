@@ -32,6 +32,7 @@
         "react-icons": "^4.3.1",
         "react-markdown": "^7.1.1",
         "react-router-dom": "^6.0.2",
-        "react-syntax-highlighter": "^15.4.5"
+        "react-syntax-highlighter": "^15.4.5",
+        "tailwindcss-animation-delay": "^1.0.7"
     }
 }
