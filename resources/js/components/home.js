@@ -43,7 +43,7 @@ const Home = () => {
                                 <Link to={`/blog/article/${post.path}`} className="h-34 sm:h-45 w-full items-end justify-center rounded-xl">
                                     <img src={`/storage/${post.filepath}`} className="block rounded-t-xl"></img>
                                     <span className="bg-rgba w-full text-sm sm:text-base h-14 sm:h-18 absolute bottom-0 left-0 rounded-b-xl px-2">
-                                        <div className="text-xs text-gray-400">
+                                        <div className="text-xs text-gray-500">
                                         {date[index]}
                                         </div>
                                         <span className="text-regal-black font-semibold">
