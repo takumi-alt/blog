@@ -1,21 +1,33 @@
 import React from 'react'
 import {Routes, Link} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import "../../css/app.css";
 import Background from './Background';
+import Page from './page';
 
 const Home = () => {
+    const params = useParams();
+    const count = Number(params.id);
+
+    const [pages, setPages] = useState();
+    // postsにはblog/idの(id * 8)個の記事が入る
     const [posts, setPosts] = useState([]);
 
     // 記事の投稿一覧を取得
     useEffect(() => {
         axios.get('/api/all')
         .then(res => {
-            setPosts(res.data.posts)
+            setPages(Math.ceil(res.data.posts.length / 8))
+            for(let i = (params.id - 1) * 8; i <= (params.id * 8) - 1; i++) {
+                setPosts((prev) => [...prev, res.data.posts[i]])
+                if(i == res.data.posts.length - 1) {
+                    break;
+                }
+            }
         })
     }, []);
-    
 
     return (
         <div className="relative overflow-hidden">
@@ -33,6 +45,7 @@ const Home = () => {
                         }
                     </ul>
                 </div>
+                <Page pages={pages} count={count} />
             </main>
         </div>
     )
