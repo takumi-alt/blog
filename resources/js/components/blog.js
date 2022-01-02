@@ -6,30 +6,35 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import '../../css/app.css';
 import ReactMarkdown from 'react-markdown';
+import {AiOutlineHistory} from 'react-icons/ai';
 
 const Blog = props => {
     const params = useParams();
+    const[date, setDate] = useState();
     
     const [recode, setRecode] = useState([]);
     const [title, setTitle] = useState();
     const [content, setContent] = useState();
     const [img, setImg] = useState();
+
     useEffect(() => {
         axios.get(`/api/read/${params.id}`)
         .then(res => {
+            setDate(res.data.date)
             setRecode(res.data.posts);
             setTitle(res.data.posts.title);
             setContent(res.data.posts.content);
             setImg(res.data.posts.filepath);
         })
     }, []);
+
     useEffect(() => {
         const path = `/storage/${img}`;
         const element = <img src={path} width="600" className="mx-auto"></img>
         ReactDOM.render(element, document.getElementById('image'));
-        }, [img])
+    }, [img])
 
-        const components = {
+    const components = {
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '')
           return !inline && match ? (
@@ -42,13 +47,14 @@ const Blog = props => {
             </code>
           )
         },
-      }
+    }
     
    
     return (
         <main className="bg-gray-200">
             
                 <div className="md:w-2/3 mx-auto pt-8 px-4 bg-gray-200">
+                    <div className="flex"><AiOutlineHistory className="text-purple-500 mr-2 w-4 h-4" />{date}</div>
                     <ReactMarkdown className="text-regal-black">
                         {title}
                     </ReactMarkdown>

@@ -20,18 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("/read/{path}", function ($path) {
-    // Modelのクラスを指定
-    return [
-        "posts" => Post::where('path', $path)->first()
-    ];
-});
-Route::get("/all", function () {
-    return response()->json(
-        [
-            'posts' => Post::where('status', 1)->orderBy('id', 'desc')->get()
-        ]
-    );
-});
+Route::get("/read/{path}", [ApiController::class, 'article'])->name('article');
+
+Route::get("/all", [ApiController::class, 'all'])->name('all');
 
 Route::post("/contact", [ApiController::class, 'contact'])->name('contact');
