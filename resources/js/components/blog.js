@@ -54,7 +54,7 @@ const Blog = props => {
         <main className="bg-gray-200">
             
                 <div className="md:w-2/3 mx-auto pt-8 px-4 bg-gray-200">
-                    <div className="flex"><AiOutlineHistory className="text-purple-500 mr-2 w-4 h-4" />{date}</div>
+                    <div className="flex text-gray-500"><AiOutlineHistory className="text-purple-500 mr-2 w-4 h-4" />{date}</div>
                     <ReactMarkdown className="text-regal-black">
                         {title}
                     </ReactMarkdown>
