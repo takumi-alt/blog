@@ -28,11 +28,14 @@
 
         </form>
         <section class="flex flex-wrap mt-4">
-            @foreach ($imgs as $img)
-            <div class="w-84 mr-2 mb-4">
+            @foreach ($imgs as $index => $img)
+            <form action="/delete_file" method="POST" class="w-84 mr-2 mb-4">
+                @csrf
+                <input type="value" value="{{$img}}" name="del_id" class="">
                 <img src="{{$img}}" class="w-full">
-                <a href="{{$img}}">{{$img}}</a>
-            </div>
+                <a href="{{$img}}" class="text-regal-white">{{$img}}</a>
+                <button type="submit" class="text-regal-black bg-regal-white rounded-md ml-4">Delete</button>
+            </form>
             @endforeach
         </section>
     </div>

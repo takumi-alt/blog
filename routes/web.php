@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UploadController;
-use Laravel\Ui\Presets\React;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +49,4 @@ Route::get('/delete/{id}', [HomeController::class, 'delete'])->name('delete');
 
 // img
 Route::resource('/upload', UploadController::class);
+Route::post('/delete_file', [UploadController::class, 'delete_file'])->name('delete_file');

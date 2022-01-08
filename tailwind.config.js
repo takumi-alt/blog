@@ -68,7 +68,7 @@ module.exports = {
         },
         keyframes: {
             rotate: {
-                '0%': {transform: 'translateY(0) rotate(0deg)', opacity: '0.8'},
+                '0%': {transform: 'translateY(0) rotate(0deg)', opacity: '0.7'},
                 '100%': {transform: 'translateY(-2500px) rotate(720deg)', opacity: '0.3'}
             },
         },
