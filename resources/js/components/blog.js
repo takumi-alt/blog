@@ -7,12 +7,13 @@ import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import '../../css/app.css';
 import ReactMarkdown from 'react-markdown';
 import {AiOutlineHistory} from 'react-icons/ai';
+import ShareButton from './ShareButton';
+
+
 
 const Blog = props => {
     const params = useParams();
     const[date, setDate] = useState();
-    
-    const [recode, setRecode] = useState([]);
     const [title, setTitle] = useState();
     const [content, setContent] = useState();
     const [img, setImg] = useState();
@@ -21,7 +22,6 @@ const Blog = props => {
         axios.get(`/api/read/${params.id}`)
         .then(res => {
             setDate(res.data.date)
-            setRecode(res.data.posts);
             setTitle(res.data.posts.title);
             setContent(res.data.posts.content);
             setImg(res.data.posts.filepath);
@@ -59,6 +59,7 @@ const Blog = props => {
                         {title}
                     </ReactMarkdown>
                     <div id="image" className="mb-4"></div>
+                    <ShareButton url={`https://engineeeer.site/blog/article/${params.id}`} title={title}/>
                     <ReactMarkdown components={components} className="text-regal-black">
                         {content}
                     </ReactMarkdown>
