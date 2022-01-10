@@ -51,7 +51,7 @@ const Blog = props => {
     
    
     return (
-        <main className="bg-gray-200">
+        <main className="bg-gray-200 pt-40 sm:pt-44">
             
                 <div className="md:w-2/3 mx-auto pt-8 px-4 bg-gray-200">
                     <div className="flex text-gray-500"><AiOutlineHistory className="text-purple-500 mr-2 w-4 h-4" />{date}</div>

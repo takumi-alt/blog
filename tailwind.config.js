@@ -27,7 +27,8 @@ module.exports = {
             'regal-black': '#303841',
             'regal-gray': '#aaaaaa',
             'regal-white': '#eeeeee',
-            'rgba': 'rgba(255, 255, 255, 0.7)'
+            'rgba': 'rgba(255, 255, 255, 0.7)',
+            'light-purple': 'rgba(190, 75, 170, 0.6)'
         },
         lineHeight: {
             'extra-loose': '2.5',
