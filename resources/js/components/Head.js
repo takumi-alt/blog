@@ -34,13 +34,13 @@ const Head = () => {
 
     return (
         <div className="fixed z-50 w-full">
-            <div id="id" className="flex justify-center items-center h-32 bg-purple-600 text-center group relative">
+            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-purple-600 text-center group relative">
                     <div className="absolute right-0 top-0">
                         <Hamburger />
                     </div>
-                    <div className="w-24 h-24 rounded-part1 bg-purple-300 absolute top-0 left-4"></div>
-                    <div className="w-24 h-24 rounded-part2 bg-purple-400 absolute bottom-0 left-32"></div>
-                    <div className="w-24 h-24 rounded-part3 bg-purple-500 absolute top-2 left-60"></div>
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-part1 bg-purple-300 absolute top-0 left-4"></div>
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-part2 bg-purple-400 absolute bottom-0 left-28 sm:left-32"></div>
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-part3 bg-purple-500 absolute top-2 left-52 sm:left-60"></div>
                     {span}
                     <span className="mr-4"></span>
                     {blog}

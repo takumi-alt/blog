@@ -33,7 +33,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="relative overflow-hidden pt-40 sm:pt-44">
+        <div className="relative overflow-hidden pt-32 sm:pt-44">
             < Background />
             <main className="bg-gray-200">
                 <div className="lg:w-4/5 bg-gray-200 mx-auto">

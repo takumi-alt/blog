@@ -7,7 +7,7 @@ import Background from './Background';
 
 const Profile = () => {
     return (
-        <div className="bg-gray-200 relative overflow-hidden pt-40 sm:pt-44">
+        <div className="bg-gray-200 relative overflow-hidden pt-32 sm:pt-44">
             <Background />
             <div className="w-3/4 lg:w-5/6 mx-auto pt-12">
                 <div className="mx-auto hover">

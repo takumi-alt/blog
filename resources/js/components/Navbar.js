@@ -8,7 +8,7 @@ import '../../css/app.css'
 const Navbar = () => {
     return (
         <>
-             <div className="bg-regal-white fixed z-30 w-full pt-32">
+             <div className="bg-regal-white fixed z-30 w-full pt-24 sm:pt-32">
                 <div className="bg-regal-white flex justify-center h-8 sm:h-12 md:w-4/5 mx-auto">
                     {/* home */}
                     <Link to={`/blog/1`}  className="cursor-pointer h-8 sm:h-12 border-l-2 border-gray-300 flex-1">

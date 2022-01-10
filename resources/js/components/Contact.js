@@ -56,7 +56,7 @@ const Contact = () => {
         }
                     
     return (
-        <div className="bg-gray-200 mx-auto relative overflow-hidden pt-40 sm:pt-44">
+        <div className="bg-gray-200 mx-auto relative overflow-hidden pt-32 sm:pt-44">
             < Background />
             <div className="md:w-4/5 mx-auto px-4 pt-12">
 
