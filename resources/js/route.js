@@ -10,11 +10,13 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Search from './components/Search';
+import Hamburger from './components/Hamburger';
 
 
 const App = () => {
     return (
-        <div>
+        <div className="bg-white relative">
+            <Hamburger />
             <Head />
             <Navbar />
             <Routes>

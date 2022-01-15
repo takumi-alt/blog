@@ -25,6 +25,6 @@
         @apply rounded-2xl;
     }
     .nav-button {
-        @apply text-regal-black h-full w-full font-mono text-sm sm:text-xl hover:bg-green-400 duration-1000;
+        @apply text-regal-black h-full w-full font-mono text-sm sm:text-xl hover:bg-regal-beige hover:border hover:border-regal-red duration-1000;
     }
 }

@@ -51,9 +51,9 @@ const Blog = props => {
     
    
     return (
-        <main className="bg-gray-200 pt-32 sm:pt-44">
+        <main className="bg-regal-beige">
             
-                <div className="md:w-2/3 mx-auto pt-8 px-4 bg-gray-200">
+                <div className="md:w-2/3 mx-auto pt-8 px-4 bg-regal-beige">
                     <div className="flex text-gray-500"><AiOutlineHistory className="text-purple-500 mr-2 w-4 h-4" />{date}</div>
                     <ReactMarkdown className="text-regal-black">
                         {title}

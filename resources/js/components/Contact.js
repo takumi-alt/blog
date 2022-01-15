@@ -56,29 +56,29 @@ const Contact = () => {
         }
                     
     return (
-        <div className="bg-gray-200 mx-auto relative overflow-hidden pt-32 sm:pt-44">
-            < Background />
+        <div className="bg-regal-beige mx-auto relative overflow-hidden">
+            {/* < Background /> */}
             <div className="md:w-4/5 mx-auto px-4 pt-12">
 
                 <form name="form1" action={path} method={method} onSubmit={check}>
                     <div className="mb-8 w-full">
                         <p className="mb-2 text-lg font-black">name</p>
-                        <input type="text" name="name" className="block mx-auto rounded-xl w-full h-12" value={name} onChange={handleChange}></input>
+                        <input type="text" name="name" className="border-none outline-none focus:shadow-2xlr block mx-auto rounded-xl w-full h-12" value={name} onChange={handleChange}></input>
                         <p className={active_name ? "hidden" : "text-red-400"}>※名前を入力してください</p>
                     </div>
                     <div className="mb-8 w-full">
                         <p className="mb-2 text-lg font-black">mail</p>
-                        <input type="text" name="mail" className="block mx-auto rounded-xl w-full h-12" value={mail} onChange={handleChange}></input>
+                        <input type="text" name="mail" className="border-none outline-none focus:shadow-2xlr block mx-auto rounded-xl w-full h-12" value={mail} onChange={handleChange}></input>
                         <p className={active_mail ? "hidden" : "text-red-400"}>※メールアドレスを入力してください</p>
                     </div>
                     <div className="mb-8 w-full">
                         <p className="mb-2 text-lg font-black">title</p>
-                        <input type="text" name="title" className="block mx-auto rounded-xl w-full h-12" value={title} onChange={handleChange}></input>
+                        <input type="text" name="title" className="border-none outline-none focus:shadow-2xlr block mx-auto rounded-xl w-full h-12" value={title} onChange={handleChange}></input>
                         <p className={active_title ? "hidden" : "text-red-400"}>※タイトルを入力してください</p>
                     </div>
                     <div className="pb-8 w-full">
                         <p className="mb-2 text-lg font-black">content</p>
-                        <textarea name="content" className="block mx-auto rounded-xl w-full h-48" value={content} onChange={handleChange}></textarea>
+                        <textarea name="content" className="border-none outline-none focus:shadow-2xlr block mx-auto rounded-xl w-full h-48" value={content} onChange={handleChange}></textarea>
                         <p className={active_content ? "hidden" : "text-red-400"}>※内容を入力してください</p>
                     </div>
                     <div className="pb-12">

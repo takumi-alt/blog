@@ -47,27 +47,27 @@ const Page = (props) => {
 
     return (
         <div className="flex justify-center">
-            <a href={number - 1} className={active_back ? "w-8 h-8 rounded-full hover:bg-green-400 transition duration-1000" : "hidden"}>
+            <a href={number - 1} className={active_back ? "w-8 h-8 rounded-full hover:bg-red-300 transition duration-1000" : "hidden"}>
                 <button className="w-full h-full text-regal-black">
                 <FaAngleLeft className="mx-auto" />
                 </button>
             </a>
-            <a href={number} className="w-8 h-8 rounded-full bg-purple-400 text-center ml-2 mr-2 hover:bg-green-400 transition duration-1000">
+            <a href={number} className="w-8 h-8 rounded-full bg-regal-red text-center ml-2 mr-2 hover:bg-red-300 transition duration-1000">
                 <button className="w-full h-full text-regal-black">
                 {number}
                 </button>
             </a>
-            <a href={number + 1} className={active2 ? "w-8 h-8 rounded-full bg-purple-400 text-center mr-2 hover:bg-green-400 transition duration-1000" : "hidden"}>
+            <a href={number + 1} className={active2 ? "w-8 h-8 rounded-full bg-regal-red text-center mr-2 hover:bg-red-300 transition duration-1000" : "hidden"}>
                 <button className="w-full h-full text-regal-black">
                 {number + 1}
                 </button>
             </a>
-            <a href={number + 2} className={active3 ? "w-8 h-8 rounded-full bg-purple-400 text-center mr-2 hover:bg-green-400 transition duration-1000" : "hidden"}>
+            <a href={number + 2} className={active3 ? "w-8 h-8 rounded-full bg-regal-red text-center mr-2 hover:bg-red-300 transition duration-1000" : "hidden"}>
                 <button className="w-full h-full text-regal-black">
                 {number + 2}
                 </button>
             </a>
-            <a href={number + 1} className={active_next ? "w-8 h-8 rounded-full hover:bg-green-400 transition duration-1000" : "hidden"}>
+            <a href={number + 1} className={active_next ? "w-8 h-8 rounded-full hover:bg-red-300 transition duration-1000" : "hidden"}>
                 <button className="w-full h-full text-regal-black">
                 <FaAngleRight className="mx-auto" />
                 </button>
