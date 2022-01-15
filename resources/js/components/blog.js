@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { shadesOfPurple } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import '../../css/app.css';
 import ReactMarkdown from 'react-markdown';
 import {AiOutlineHistory} from 'react-icons/ai';
@@ -38,7 +38,7 @@ const Blog = props => {
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '')
           return !inline && match ? (
-              <SyntaxHighlighter style={shadesOfPurple} language={match[1]} PreTag="div" {...props}>
+              <SyntaxHighlighter style={atelierCaveLight} language={match[1]} PreTag="div" {...props}>
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (

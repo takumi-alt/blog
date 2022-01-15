@@ -39,7 +39,7 @@ const Home = () => {
                 <div className="lg:w-4/5 bg-regal-beige mx-auto">
                     <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center">
                         {
-                            posts.map((post, index) => <li key={post.id} className="bg-regal-white w-58 h-48 sm:w-84 sm:h-64 m-4 sm:m-8 shadow-2xl transition duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero rounded-xl">
+                            posts.map((post, index) => <li key={post.id} className="bg-regal-white w-58 h-48 sm:w-84 sm:h-64 m-4 sm:m-8 shadow-2xlr transition duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero rounded-xl">
                                 <Link to={`/blog/article/${post.path}`} className="h-34 sm:h-45 w-full items-end justify-center rounded-xl">
                                     <img src={`/storage/${post.filepath}`} className="block rounded-t-xl"></img>
                                     <span className="bg-rgba w-full text-sm sm:text-base h-14 sm:h-18 absolute bottom-0 left-0 px-2 rounded-b-xl">
