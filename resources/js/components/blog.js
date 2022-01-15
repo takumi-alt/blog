@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { shadesOfPurple } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import '../../css/app.css';
 import ReactMarkdown from 'react-markdown';
 import {AiOutlineHistory} from 'react-icons/ai';
@@ -38,7 +38,7 @@ const Blog = props => {
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '')
           return !inline && match ? (
-              <SyntaxHighlighter style={prism} language={match[1]} PreTag="div" {...props}>
+              <SyntaxHighlighter style={shadesOfPurple} language={match[1]} PreTag="div" {...props}>
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (
@@ -54,7 +54,7 @@ const Blog = props => {
         <main className="bg-regal-beige">
             
                 <div className="md:w-2/3 mx-auto pt-8 px-4 bg-regal-beige">
-                    <div className="flex text-gray-500"><AiOutlineHistory className="text-purple-500 mr-2 w-4 h-4" />{date}</div>
+                    <div className="flex text-gray-500"><AiOutlineHistory className="text-regal-green mr-2 w-4 h-4" />{date}</div>
                     <ReactMarkdown className="text-regal-black">
                         {title}
                     </ReactMarkdown>
