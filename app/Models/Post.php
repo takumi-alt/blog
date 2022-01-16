@@ -14,6 +14,11 @@ class Post extends Model
         return $this->belongsTo('App\Models\User');
     }
 
+    public function category()
+    {
+        return $this->belongTo('App\Models\Category');
+    }
+
     public function myPost()
     {
         $get = $this::select('id', 'title', 'status')->get();
