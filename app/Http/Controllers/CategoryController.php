@@ -13,4 +13,18 @@ class CategoryController extends Controller
         $categorys = Category::all();
         return view('admin/category', compact('categorys'));
     }
+
+    public function add(Request $request)
+    {
+        $data = $request->all();
+        $exist_category = Category::where('id', $data['id'])->where('category', $data['category']);
+
+        if (empty($exit_category)) {
+            $new_category = Category::insertGetId(['id' => $data['id'], 'category' => $data['category']]);
+        } else {
+            $new_category = $exist_category['id'];
+        }
+
+        return redirect()->route('category', compact('data'));
+    }
 }

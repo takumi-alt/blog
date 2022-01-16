@@ -52,8 +52,8 @@
                         </div>
                         <!-- id -->
                         <div>
-                            <p class="text-regal-white mb-0 mt-4">id</p>
-                            <input id="id" name="id" class="rounded-2xl w-8">
+                            <!-- <p class="text-regal-white mb-0 mt-4">id</p> -->
+                            <input id="id" name="id" class="rounded-2xl w-8 hidden">
                         </div>
                         <!-- 投稿status -->
                         <div>

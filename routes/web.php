@@ -50,6 +50,7 @@ Route::get('/delete/{id}', [HomeController::class, 'delete'])->name('delete');
 
 //Category
 Route::get('/category', [CategoryController::class, 'category'])->name('category');
+Route::post('/add', [CategoryController::class, 'add'])->name('add');
 
 // img
 Route::resource('/upload', UploadController::class);
