@@ -10,7 +10,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- ここからハイライトjs -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-light.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/atelier-cave-light.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
@@ -81,23 +81,25 @@
         <div class="flex-1 bg-regal-black">
             <div class="bg-regal-white mx-6 mt-10 transform scale-60 origin-top-left">
                 <!-- head部分 -->
-                <div class="flex justify-center items-center h-32 bg-purple-600 text-center relative">
-                    <div class="w-24 h-24 rounded-part1 bg-purple-300 absolute top-0 left-4"></div>
-                    <div class="w-24 h-24 rounded-part2 bg-purple-400 absolute bottom-0 left-32"></div>
-                    <div class="w-24 h-24 rounded-part3 bg-purple-500 absolute top-2 left-60"></div>
-                    <span class="font-black text-5xl text-regal-white">engineer blog</span>
+                <div class="flex justify-center items-center h-32 bg-white text-center relative">
+                    <div class="absolute mx-0 flex">
+                        <div class="w-24 h-24 rounded-part1 bg-regal-red mr-2"></div>
+                        <div class="w-24 h-24 rounded-part2 bg-regal-green mr-2"></div>
+                        <div class="w-24 h-24 rounded-part3 bg-regal-beige"></div>
+                    </div>
+                    <span class="text-5xl text-regal-black z-50">engineer blog</span>
                 </div>
                 <!-- navタグ部分 -->
-                <div class="bg-regal-white">
-                    <div class="bg-regal-white flex justify-center h-12 w-2/3 mx-auto">
-                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">home</p>
-                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">search</p>
-                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-gray-300 pl-24 pr-24">contact</p>
-                        <p class="text-regal-black h-12 font-mono text-xl my-auto border-l-2 border-r-2 border-gray-300 pl-24 pr-24">info</p>
+                <div class="bg-white">
+                    <div class="flex justify-center h-12 w-2/3 mx-auto">
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">home</button>
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">search</button>
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">contact</button>
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">info</button>
                     </div>
                 </div>
-                <div class="bg-gray-200">
-                    <div class="bg-gray-200 pt-8 w-4/5 mx-auto">
+                <div class="bg-regal-beige">
+                    <div class="pt-8 w-4/5 mx-auto">
                         <!-- title部分 -->
                         <div id="title_markdown" class=""></div>
                         <!-- アイキャッチ画像部分 -->
