@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,8 @@ Route::post('/update/{id}', [HomeController::class, 'update'])->name('update');
 Route::get('/top', [HomeController::class, 'top'])->name('top');
 Route::post('/top', [HomeController::class, 'top'])->name('top');
 Route::get('/delete/{id}', [HomeController::class, 'delete'])->name('delete');
+
+//Category
 Route::get('/category', [CategoryController::class, 'category'])->name('category');
 
 // img
