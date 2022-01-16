@@ -17,9 +17,14 @@
                 <input type='id' name="id" class="hidden">
                 <input type="text" name="category" class="w-32 mr-4">
                 <button type="submit" class="bg-regal-white rounded-lg w-12 py-2">追加</button>
-
             </div>
         </form>
+
+        <ul class="mt-12">
+            @foreach($categorys as $category)
+            <li class="text-regal-white list-none mb-4">{{$category['category']}}</li>
+            @endforeach
+        </ul>
 
 
 

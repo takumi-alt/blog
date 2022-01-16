@@ -51,8 +51,17 @@
                         </div>
                         <!-- id -->
                         <div>
-                            <p class="text-regal-white mb-0 mt-4">id</p>
-                            <input id="id" name="id" class="rounded-2xl w-8" value="{{ $update['id'] }}">
+                            <!-- <p class="text-regal-white mb-0 mt-4">id</p> -->
+                            <input id="id" name="id" class="rounded-2xl w-8 hidden" value="{{ $update['id'] }}">
+                        </div>
+                        <!-- category -->
+                        <div>
+                            <p class="text-regal-white mb-0 mt-4">category</p>
+                            <select id="category" name="category" class="rounded-2xl w-20">
+                                @foreach($categorys as $category)
+                                <option>{{$category['category']}}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <!-- 投稿status -->
                         <div>

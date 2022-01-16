@@ -15,4 +15,10 @@ class Category extends Model
     {
         return $this->hasMany('App\Models\Post');
     }
+
+    public function myCategory()
+    {
+        $get = $this::select('category')->get();
+        return $get;
+    }
 }

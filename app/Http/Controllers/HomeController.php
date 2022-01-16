@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -44,10 +45,11 @@ class HomeController extends Controller
         $data = $request->all();
 
         $user = Auth::user();
+        $category = Category::where('category', $data['category'])->first();
 
         $exist_post = Post::where('id', $data['id'])->where('content', $data['content'])->first();
         if (empty($exist_psot)) {
-            $new_post = Post::insertGetId(['id' => $data['id'], 'title' => $data['title'], 'path' => $data['path'], 'filepath' => $data['filepath'], 'status' => $data['status'], 'content' => $data['content'], 'created_at' => $data['created_at'], 'user_id' => $user['id']]);
+            $new_post = Post::insertGetId(['id' => $data['id'], 'title' => $data['title'], 'path' => $data['path'], 'filepath' => $data['filepath'], 'status' => $data['status'], 'content' => $data['content'], 'created_at' => $data['created_at'], 'user_id' => $user['id'], 'category_id' => $category['id']]);
         } else {
             $new_post = $exist_post['id'];
         }
@@ -63,7 +65,9 @@ class HomeController extends Controller
     public function update(Request $request, $id)
     {
         $input = $request->all();
-        Post::where('id', $id)->update(['id' => $input['id'], 'title' => $input['title'], 'path' => $input['path'], 'filepath' => $input['filepath'], 'status' => $input['status'], 'content' => $input['content'], 'created_at' => $input['created_at']]);
+        $category = Category::where('category', $input['category'])->first();
+
+        Post::where('id', $id)->update(['id' => $input['id'], 'title' => $input['title'], 'path' => $input['path'], 'filepath' => $input['filepath'], 'status' => $input['status'], 'content' => $input['content'], 'created_at' => $input['created_at'], 'category_id' => $category['id']]);
         return redirect()->route('top');
     }
 

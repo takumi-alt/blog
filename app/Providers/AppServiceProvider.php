@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 // use App\Views\Composers\MultiComposer;
 use App\Models\Post;
+use App\Models\Category;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,7 +32,10 @@ class AppServiceProvider extends ServiceProvider
             $my_posts = new Post();
             $posts = $my_posts->myPost();
 
-            $view->with('posts', $posts);
+            $my_categorys = new Category();
+            $categorys = $my_categorys->myCategory();
+
+            $view->with('posts', $posts)->with('categorys', $categorys);
         });
     }
 }
