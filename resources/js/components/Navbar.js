@@ -9,7 +9,7 @@ import { CgProfile } from "react-icons/cg";
 const Navbar = () => {
     return (
         <>
-             <div className="bg-regal-white z-30 w-full">
+             <div className="bg-regal-white z-30 w-full mt-3">
                 <div className="bg-regal-white flex justify-center h-12 sm:h-16 leading-20 md:w-4/5 mx-auto">
                     {/* home */}
                     <Link to={`/blog/1`}  className="nav-link ml-2">
