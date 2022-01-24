@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import ReactDOM from 'react-dom';
+import {Link} from 'react-router-dom';
 import { GoSearch } from "react-icons/go";
-import { BsMap } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 import '../../css/app.css'
 
 
@@ -74,7 +74,9 @@ const Hamburger = () => {
                         <GoSearch className="mx-auto text-white md:h-6 md:w-6" />
                     </button>
                     <button id="button_2" className="bg-regal-green hover:bg-regal-red z-30 w-6 h-6 md:w-12 md:h-12 rounded-full absolute top-6 right-6 transiton duration-1000 -translate-x-9 translate-y-8 md:-translate-x-16 md:translate-y-12">
-                        <BsMap className="mx-auto text-white md:h-6 md:w-6" />
+                        <Link to={`/blog/contact`} className="w-full h-full">
+                            <AiOutlineMail className="mx-auto text-white md:h-6 md:w-6" />
+                        </Link>
                     </button>
                 </div>
             </div>
