@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Search from './components/Search';
 import Hamburger from './components/Hamburger';
+import Detail from './components/Detail';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
                 <Route path="/blog/contact/" element={< Contact />} />
                 <Route path="/blog/profile" element={< Profile />} />
                 <Route path="/blog/search/" element={< Search />} />
+                <Route path="/blog/category/:id" element={< Detail />} />
             </Routes>
             <Hoot />
         </div>

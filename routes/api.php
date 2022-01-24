@@ -25,3 +25,5 @@ Route::get("/read/{path}", [ApiController::class, 'article'])->name('article');
 Route::get("/all", [ApiController::class, 'all'])->name('all');
 
 Route::post("/contact", [ApiController::class, 'contact'])->name('contact');
+
+Route::get("/category/{path}", [ApiController::class, 'category'])->name('category');

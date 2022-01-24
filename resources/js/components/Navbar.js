@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../css/app.css'
 import { AiOutlineHome } from "react-icons/ai";
-import { BiCodeAlt } from "react-icons/bi";
-import { ImBlog } from "react-icons/im";
+import { FaLaptopCode } from "react-icons/fa";
+import { MdEditNote } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
@@ -19,16 +19,16 @@ const Navbar = () => {
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">home</button>
                     </Link>
                     {/* programming */}
-                    <Link to={`/blog/1`}  className="nav-link">
+                    <Link to={`/blog/category/programing`}  className="nav-link">
                         <button className="nav-icon transform group-hover:translate-y-12">
-                            <BiCodeAlt className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
+                            <FaLaptopCode className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">programming</button>
                     </Link>
                     {/* blog */}
                     <Link to={`/blog/1`}  className="nav-link">
                         <button className="nav-icon transform group-hover:translate-y-12">
-                            <ImBlog className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
+                            <MdEditNote className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">blog</button>
                     </Link>

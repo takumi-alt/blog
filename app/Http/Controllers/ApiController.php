@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Models\Contact;
 use App\Models\Post;
+use App\Models\Category;
 
 class ApiController extends Controller
 {
@@ -39,5 +40,18 @@ class ApiController extends Controller
         }
 
         return response()->json(['posts' => $posts, 'date' => $created_at]);
+    }
+
+    public function category($path)
+    {
+        $category_line = Category::where('category', $path)->first();
+        $posts = Post::where('status', 1)->where('category_id', $category_line['id'])->get();
+
+        $created_at = [];
+        foreach ($posts as $post) {
+            $date = Carbon::createFromFormat('Y-m-d H:i:s', $post->created_at)->format('Y-m-d');
+            array_push($created_at, $date);
+        }
+        return response()->json(['psots' => $posts, 'data' => $created_at]);
     }
 }
