@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import '../../css/app.css'
-import Background from './Background'
+import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
     // POST先のpathを管理
@@ -57,8 +57,13 @@ const Contact = () => {
                     
     return (
         <div className="bg-regal-beige mx-auto relative overflow-hidden">
-            {/* < Background /> */}
-            <div className="md:w-4/5 mx-auto px-4 pt-12">
+            <div className="w-4/5 pt-4 border-b-2 mx-auto">
+                <AiOutlineMail className="w-6 h-6 md:w-8 md:h-8 inline pr-2 text-regal-green" />
+                <span className="text-nomal md:text-lg font-black opacity-75">
+                    contact
+                </span>
+            </div>
+            <div className="md:w-4/5 mx-auto px-4 pt-8">
 
                 <form name="form1" action={path} method={method} onSubmit={check}>
                     <div className="mb-8 w-full">

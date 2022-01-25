@@ -7,6 +7,7 @@ import { atelierCaveLight } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import '../../css/app.css';
 import ReactMarkdown from 'react-markdown';
 import {AiOutlineHistory} from 'react-icons/ai';
+import { AiFillFolderOpen } from "react-icons/ai";
 import ShareButton from './ShareButton';
 
 
@@ -17,11 +18,13 @@ const Blog = () => {
     const [title, setTitle] = useState();
     const [content, setContent] = useState();
     const [img, setImg] = useState();
+    const [category, setCategory] = useState();
 
     useEffect(() => {
         axios.get(`/api/read/${params.id}`)
         .then(res => {
             setDate(res.data.date)
+            setCategory(res.data.category);
             setTitle(res.data.posts.title);
             setContent(res.data.posts.content);
             setImg(res.data.posts.filepath);
@@ -53,8 +56,15 @@ const Blog = () => {
     return (
         <main className="bg-regal-beige">
             
-                <div className="md:w-2/3 mx-auto pt-8 px-4 bg-regal-beige">
-                    <div className="flex text-gray-500"><AiOutlineHistory className="text-regal-green mr-2 w-4 h-4" />{date}</div>
+                <div className="md:w-2/3 mx-auto py-6 px-4 bg-regal-beige">
+                    <div className="text-gray-500">
+                        <span className="p-1">
+                            <AiOutlineHistory className="text-regal-green mr-2 w-4 h-4 inline" />{date}
+                        </span>
+                        <span className="ml-4 rounded-lg p-1">
+                            <AiFillFolderOpen className="mr-2 w-4 h-4 inline text-regal-green" />{category}
+                        </span>
+                    </div>
                     <ReactMarkdown className="text-regal-black">
                         {title}
                     </ReactMarkdown>
