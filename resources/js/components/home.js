@@ -1,11 +1,10 @@
 import React from 'react'
-import {Routes, Link} from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import "../../css/app.css";
-import Background from './Background';
-import Page from './page';
+import Page from './Page';
+import { AiOutlineHome } from "react-icons/ai";
 
 const Home = () => {
     const params = useParams();
@@ -34,9 +33,14 @@ const Home = () => {
 
     return (
         <div className="relative overflow-hidden">
-            {/* < Background /> */}
             <main className="bg-regal-beige">
                 <div className="lg:w-4/5 bg-regal-beige mx-auto">
+                    <div className="w-4/5 lg:w-full pt-4 border-b-2 mx-auto">
+                        <AiOutlineHome className="w-6 h-6 md:w-8 md:h-8 inline pr-2 text-regal-green" />
+                        <span className="text-nomal md:text-lg font-black opacity-75">
+                            home
+                        </span>
+                    </div>
                     <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center">
                         {
                             posts.map((post, index) => <li key={post.id} className="bg-regal-white w-58 h-48 sm:w-84 sm:h-64 m-4 sm:m-8 shadow-2xlr transition duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero rounded-xl">

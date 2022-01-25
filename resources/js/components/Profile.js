@@ -3,12 +3,19 @@ import '../../css/app.css'
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
-import Background from './Background';
+import { CgProfile } from "react-icons/cg";
 
 const Profile = () => {
     return (
         <div className="bg-regal-beige relative overflow-hidden">
+            <div className="w-4/5 pt-4 border-b-2 mx-auto">
+                <CgProfile className="w-6 h-6 md:w-8 md:h-8 inline pr-2 text-regal-green" />
+                <span className="text-nomal md:text-lg font-black opacity-75">
+                    profile
+                </span>
+            </div>
             <div className="w-3/4 lg:w-5/6 mx-auto pt-12">
+                
                 <div className="mx-auto hover">
 
                     <div className="w-full">

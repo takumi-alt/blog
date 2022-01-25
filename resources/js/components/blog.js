@@ -11,7 +11,7 @@ import ShareButton from './ShareButton';
 
 
 
-const Blog = props => {
+const Blog = () => {
     const params = useParams();
     const[date, setDate] = useState();
     const [title, setTitle] = useState();

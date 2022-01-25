@@ -19,14 +19,14 @@ const Navbar = () => {
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">home</button>
                     </Link>
                     {/* programming */}
-                    <Link to={`/blog/category/programing`}  className="nav-link">
+                    <Link to={`/blog/category/プログラミング`}  className="nav-link">
                         <button className="nav-icon transform group-hover:translate-y-12">
                             <FaLaptopCode className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">programming</button>
                     </Link>
                     {/* blog */}
-                    <Link to={`/blog/1`}  className="nav-link">
+                    <Link to={`/blog/category/ブログ`}  className="nav-link">
                         <button className="nav-icon transform group-hover:translate-y-12">
                             <MdEditNote className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>

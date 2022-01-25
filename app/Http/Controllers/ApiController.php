@@ -52,6 +52,6 @@ class ApiController extends Controller
             $date = Carbon::createFromFormat('Y-m-d H:i:s', $post->created_at)->format('Y-m-d');
             array_push($created_at, $date);
         }
-        return response()->json(['psots' => $posts, 'data' => $created_at]);
+        return response()->json(['posts' => $posts, 'date' => $created_at]);
     }
 }
