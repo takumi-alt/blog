@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import '../../css/app.css'
 import { AiOutlineHome } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
-import { MdEditNote } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Navbar = () => {
     return (
@@ -25,12 +25,12 @@ const Navbar = () => {
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">programming</button>
                     </Link>
-                    {/* blog */}
-                    <Link to={`/blog/category/ブログ`}  className="nav-link">
+                    {/* contact */}
+                    <Link to={`/blog/contact`}  className="nav-link">
                         <button className="nav-icon transform group-hover:translate-y-12">
-                            <MdEditNote className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
+                            <AiOutlineMail className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
-                        <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">blog</button>
+                        <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">contact</button>
                     </Link>
                     {/* profile */}
                     <Link to={`/blog/profile`}  className="nav-link">

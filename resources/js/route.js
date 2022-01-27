@@ -10,14 +10,14 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Search from './components/Search';
-import Hamburger from './components/Hamburger';
 import Detail from './components/Detail';
+import Hum from './components/Hum';
 
 
 const App = () => {
     return (
         <div className="bg-white relative">
-            <Hamburger />
+            <Hum />
             <Head />
             <Navbar />
             <Routes>

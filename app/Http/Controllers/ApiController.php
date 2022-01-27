@@ -65,4 +65,11 @@ class ApiController extends Controller
         }
         return response()->json(['posts' => $posts, 'date' => $created_at, 'category' => $categorys]);
     }
+
+    public function categories()
+    {
+        $categories = Category::get();
+
+        return response()->json(['categories' => $categories]);
+    }
 }
