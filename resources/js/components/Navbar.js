@@ -12,28 +12,28 @@ const Navbar = () => {
              <div className="bg-regal-beige z-30 w-full pt-4">
                 <div className="bg-regal-beige flex justify-center h-12 sm:h-16 leading-20 md:w-4/5 mx-auto">
                     {/* home */}
-                    <Link to={`/blog/1`}  className="nav-link ml-2">
+                    <Link to={`/blog/1`}  className="nav-link bg-regal-white ml-2">
                         <button className="nav-icon transform group-hover:translate-y-12">
                             <AiOutlineHome className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">home</button>
                     </Link>
                     {/* programming */}
-                    <Link to={`/blog/category/プログラミング`}  className="nav-link">
+                    <Link to={`/blog/category/プログラミング`}  className="nav-link bg-regal-white">
                         <button className="nav-icon transform group-hover:translate-y-12">
                             <FaLaptopCode className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">programming</button>
                     </Link>
                     {/* contact */}
-                    <Link to={`/blog/contact`}  className="nav-link">
+                    <Link to={`/blog/contact`}  className="nav-link bg-regal-white">
                         <button className="nav-icon transform group-hover:translate-y-12">
                             <AiOutlineMail className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>
                         <button className="nav-button transform group-hover:translate-y-12 group-hover:text-white">contact</button>
                     </Link>
                     {/* profile */}
-                    <Link to={`/blog/profile`}  className="nav-link">
+                    <Link to={`/blog/profile`}  className="nav-link bg-regal-white">
                         <button className="nav-icon transform group-hover:translate-y-12">
                             <CgProfile className="mx-auto w-6 h-6 md:w-8 md:h-8 text-regal-black" />
                         </button>

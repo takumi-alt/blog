@@ -14,9 +14,9 @@ const Profile = () => {
                     profile
                 </span>
             </div>
-            <div className="w-3/4 lg:w-5/6 mx-auto pt-12">
+            <div className="w-4/5 sm:w-5/6 mx-auto pt-12">
                 
-                <div className="mx-auto hover">
+                <div className="mx-auto">
 
                     <div className="w-full">
                         {/* name,img,icon*/}
