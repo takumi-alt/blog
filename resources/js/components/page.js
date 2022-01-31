@@ -46,7 +46,7 @@ const Page = (props) => {
     }
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-4">
             <a href={number - 1} className={active_back ? "w-8 h-8 rounded-full hover:bg-red-300 transition duration-1000" : "hidden"}>
                 <button className="w-full h-full text-regal-black">
                 <FaAngleLeft className="mx-auto" />
