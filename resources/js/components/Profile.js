@@ -7,7 +7,7 @@ import { CgProfile } from "react-icons/cg";
 
 const Profile = () => {
     return (
-        <div className="bg-regal-beige relative overflow-hidden">
+        <div className="bg-regal-beige relative overflow-hidden pb-2">
             <div className="w-4/5 pt-4 border-b-2 mx-auto">
                 <CgProfile className="w-6 h-6 md:w-8 md:h-8 inline pr-2 text-regal-green" />
                 <span className="text-nomal md:text-lg font-black opacity-75">
