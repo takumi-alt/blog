@@ -18,7 +18,7 @@ class Category extends Model
 
     public function myCategory()
     {
-        $get = $this::select('category')->get();
+        $get = $this::select('id', 'category')->get();
         return $get;
     }
 }

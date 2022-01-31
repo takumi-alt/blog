@@ -29,4 +29,10 @@ class CategoryController extends Controller
 
         return redirect()->route('category', compact('data', 'categorys'));
     }
+
+    public function delete($id)
+    {
+        Category::where('id', $id)->delete();
+        return redirect()->route('category');
+    }
 }
