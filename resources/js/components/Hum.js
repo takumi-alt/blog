@@ -56,10 +56,10 @@ const Hum = () => {
             </button>
         </div>
         <div id="slide" className="w-full h-40 sm:h-52 absolute top-0 -right-full bg-regal-green z-30 transform transition duration-1000">
-            {/* search */}
+            {/* category */}
             <div className="w-2/4 mx-auto mb-6 mt-8 border-b-2 border-regal-beige">
-                    <MdOutlineCategory className="inline w-6 h-6 sm:w-8 sm:h-8 text-regal-beige" />
-                    <span className="text-regal-beige ml-4 text-base sm:text-xl">All category...</span>
+                    {/* <MdOutlineCategory className="inline w-6 h-6 sm:w-8 sm:h-8 text-regal-beige" /> */}
+                    <span className="text-regal-beige ml-4 text-base sm:text-xl">・All category...</span>
                     <ul className="list-none">
                         {
                             categories.map(category => <li key={category.id} className="ml-12 mb-1">
@@ -70,8 +70,6 @@ const Hum = () => {
                         </li>)
                         }
                     </ul>
-                    
-                    
             </div>
         </div>
     </div>

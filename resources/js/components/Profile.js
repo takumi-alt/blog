@@ -34,21 +34,20 @@ const Profile = () => {
 
                     <div className="mx-auto md:w-4/5 md:flex justify-between">
                         {/* About */}
-                        <section className="mx-auto mb-12 md:w-2/3">
+                        <section className="mx-auto mb-12 md:w-3/5">
                             <p className="text-xl font-medium w-32 bg-regal-green text-center rounded-lg shadow-green3">About</p>
                             <p className="border-t-2 border-regal-red py-4 lg:text-lg text-regal-black">
                                 ご訪問ありがとうございます。サイト運営者の美馬 巧と申します。<br/>
-                                大阪府の私立大学に通う大学三年生です。将来はエンジニアとして活躍したいと思い、独学でプログラミングを勉強中です。<br/>
+                                私立大学に通う大学三年生です。将来はエンジニアとして活躍したいと思い、独学でプログラミングを勉強中です。<br/>
                                 お問い合わせは、Contactまたはinstagram、twitterからお願いします。
                             </p>
                         </section>
 
                         {/* language */}
-                        <section className="mx-auto mb-12 md:w-1/3 md:pl-20">
+                        <section className="mx-auto mb-12 md:w-2/5 md:pl-20">
                             <p className="text-xl font-medium w-32 bg-regal-green text-center rounded-lg shadow-green3">Language</p>
                             <p className="md:text-lg border-t-2 border-regal-red">
-                                ◆ HTML<br/>
-                                ◆ CSS<br/>
+                                ◆ HTML・CSS<br/>
                                 ◆ Javascript<br/>
                                 ◆ PHP<br/>
                                 ◆ Python<br/>
