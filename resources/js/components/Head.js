@@ -31,7 +31,7 @@ const Head = () => {
 
     return (
         <div className="w-full">
-            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-regal-beige group">
+            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-regal-beige group pt-4">
                     <div className="absolute mx-0 flex">
                         <div className="w-20 h-20 animate-round1 bg-regal-red mr-2"></div>
                         <div className="w-20 h-20 animate-round3 bg-regal-green mr-2"></div>
