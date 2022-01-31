@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hoot = () => {
     return (
-        <div className="bg-regal-black text-center py-4">
+        <div className="bg-gray-500 text-center py-4">
             <div className="font-black text-regal-white text-3xl">
                 engineer blog
             </div>
@@ -14,7 +14,7 @@ const Hoot = () => {
                 <Link to={`/blog/contact`} className="text-regal-white">お問い合わせ</Link>
                 <div className="text-regal-white">プライバシーポリシー</div>
             </section>
-            <div className="text-gray-500 text-xs">© 2021  engineer blog</div>
+            <div className="text-regal-black text-xs">© 2021  engineer blog</div>
         </div>
     )
 }
