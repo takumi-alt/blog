@@ -56,7 +56,7 @@ const Blog = () => {
     return (
         <main className="bg-regal-beige">
             
-                <div className="md:w-2/3 mx-auto py-6 px-4 bg-regal-beige">
+                <div className="md:w-4/5 mx-auto py-6 px-4 bg-regal-beige">
                     <div className="text-gray-500">
                         <span className="p-1">
                             <AiOutlineHistory className="text-regal-green mr-2 w-4 h-4 inline" />{date}

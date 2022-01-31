@@ -31,11 +31,11 @@ const Head = () => {
 
     return (
         <div className="w-full">
-            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-regal-white group">
+            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-regal-beige group">
                     <div className="absolute mx-0 flex">
                         <div className="w-20 h-20 animate-round1 bg-regal-red mr-2"></div>
                         <div className="w-20 h-20 animate-round3 bg-regal-green mr-2"></div>
-                        <div className="w-20 h-20 animate-round2 bg-regal-beige"></div>
+                        <div className="w-20 h-20 animate-round2 bg-regal-white"></div>
                     </div>
                     {span}
                     <span className="mr-4"></span>
