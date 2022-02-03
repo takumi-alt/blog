@@ -30,12 +30,17 @@ const Head = () => {
 
 
     return (
-        <div className="w-full">
-            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-regal-beige group pt-4">
+        <div className="w-full relative">
+                    <div className="absolute top-0 lef-8 w-20 h-20 md:w-40 md:h-40 animate-round1 bg-regal-red mr-2"></div>
+                    <div className="absolute right-72 top-32 xl:top-12 w-12 h-12 xl:w-28 xl:h-28 animate-round3 bg-regal-red mr-2"></div>
+                    <div className="absolute top-4 right-4 w-16 h-16 md:w-32 md:h-32 animate-round1 bg-regal-green mr-2"></div>
+                    <div className="absolute top-20 sm:top-32 left-48 w-20 h-20 animate-round2 bg-regal-green mr-2"></div>
+                    <div className="absolute top-40 left-32 lg:left-110 w-8 h-8 lg:w-24 lg:h-24 animate-round4 bg-regal-beige"></div>
+                    <div className="absolute top-28 right-12 sm:right-32 w-28 h-28 animate-round4 bg-regal-beige"></div>
+            <div id="id" className="flex justify-center items-center h-24 sm:h-32 bg-regal-white group pt-4">
                     <div className="absolute mx-0 flex">
-                        <div className="w-20 h-20 animate-round1 bg-regal-red mr-2"></div>
-                        <div className="w-20 h-20 animate-round3 bg-regal-green mr-2"></div>
-                        <div className="w-20 h-20 animate-round2 bg-regal-white"></div>
+                        <div className="w-20 h-20 sm:w-28 sm:h-28 animate-round3 bg-regal-green mr-10 visible md:invisible"></div>
+                        <div className="w-24 h-24 animate-round4 bg-regal-red lg:visible"></div>
                     </div>
                     {span}
                     <span className="mr-4"></span>

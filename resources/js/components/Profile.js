@@ -21,7 +21,7 @@ const Profile = () => {
                     <div className="w-full">
                         {/* name,img,icon*/}
                         <section className="mb-8">
-                            <img src="/storage/profile.jpg" className="mb-4 w-32 h-32 mx-auto animate-round2"></img>
+                            <img src="/storage/profile.jpg" className="mb-4 w-32 h-32 mx-auto rounded-full"></img>
                             <p className="text-center font-bold text-xl text-regal-red mb-2">TAKUMI MIMA</p>
                             <div className="w-32 mx-auto flex justify-center">
                                 <a className="w-16 text-green-600 hover:text-regal-red transition duration-500 text-3xl mx-auto"><FaTwitter className="mx-auto"/></a>

@@ -55,9 +55,9 @@ const Hum = () => {
                     <div id="down" className="w-6 md:w-8 h-sm md:h-1 bg-regal-beige transition duration-1000"></div>
             </button>
         </div>
-        <div id="slide" className="w-full h-40 sm:h-52 absolute top-0 -right-full bg-regal-green z-30 transform transition duration-1000">
+        <div id="slide" className="w-full h-48 sm:h-58 absolute top-0 -right-full bg-regal-green z-30 transform transition duration-1000">
             {/* category */}
-            <div className="w-2/4 mx-auto mb-6 mt-8 border-b-2 border-regal-beige">
+            <div className="w-2/4 mx-auto mt-8 border-b-2 border-regal-beige">
                     {/* <MdOutlineCategory className="inline w-6 h-6 sm:w-8 sm:h-8 text-regal-beige" /> */}
                     <span className="text-regal-beige ml-4 text-base sm:text-xl">・All category...</span>
                     <ul className="list-none">

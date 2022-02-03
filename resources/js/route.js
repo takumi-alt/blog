@@ -16,7 +16,7 @@ import Hum from './components/Hum';
 
 const App = () => {
     return (
-        <div className="bg-white relative overflow-hidden">
+        <div className="bg-white overflow-hidden">
             <Hum />
             <Head />
             <Navbar />
