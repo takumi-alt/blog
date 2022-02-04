@@ -39,8 +39,6 @@ Route::get('/blog/{any}', function () {
     return view('react');
 })->where('any', '.*');
 
-Route::get('/blog/article/{any}', [ReactController::class, 'article'])->where('any', '.*');
-
 
 // Admin
 Route::get('/create', [HomeController::class, 'create'])->name('create');

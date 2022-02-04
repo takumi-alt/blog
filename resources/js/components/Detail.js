@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {useState, useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import "../../css/app.css";
@@ -26,7 +27,9 @@ const Detail = () => {
     }, [params.id]);
 
   return (
-    <div className="relative overflow-hidden">
+      <>
+        <Helmet title={params.id} />
+        <div className="relative overflow-hidden">
             <main className="bg-regal-beige">
                 <div className="lg:w-4/5 bg-regal-beige mx-auto">
                     <div className="w-4/5 lg:w-full pt-4 border-b-2 mx-auto">
@@ -56,6 +59,7 @@ const Detail = () => {
                 </div>
             </main>
         </div>
+      </>
   )
 };
 

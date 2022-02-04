@@ -9,6 +9,7 @@ import ReactMarkdown from 'react-markdown';
 import {AiOutlineHistory} from 'react-icons/ai';
 import { AiFillFolderOpen } from "react-icons/ai";
 import ShareButton from './ShareButton';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -30,10 +31,6 @@ const Blog = () => {
             setImg(res.data.posts.filepath);
         })
     }, []);
-
-    useEffect(() => {
-        document.title = title
-    });
 
     useEffect(() => {
         const path = `/storage/${img}`;
@@ -59,26 +56,27 @@ const Blog = () => {
    
     return (
         <main className="bg-regal-beige">
-            
-                <div className="md:w-4/5 mx-auto py-6 px-4 bg-regal-beige">
-                    <div className="text-gray-500">
-                        <span className="p-1">
-                            <AiOutlineHistory className="text-regal-green mr-2 w-4 h-4 inline" />{date}
-                        </span>
-                        <span className="ml-4 rounded-lg p-1">
-                            <AiFillFolderOpen className="mr-2 w-4 h-4 inline text-regal-green" />{category}
-                        </span>
-                    </div>
-                    <ReactMarkdown className="text-regal-black">
-                        {title}
-                    </ReactMarkdown>
-                    <div id="image" className="mb-4"></div>
-                    <ShareButton url={`https://engineeeer.site/blog/article/${params.id}`} title={title}/>
-                    <ReactMarkdown components={components} className="text-regal-black">
-                        {content}
-                    </ReactMarkdown>
-                    <div className="m-0 h-4"></div>
-                </div>
+            <Helmet title={title} />
+            <div className="md:w-4/5 mx-auto py-6 px-4 bg-regal-beige">
+                <div className="text-gray-500">
+                    <span className="p-1">
+                        <AiOutlineHistory className="text-regal-green mr-2 w-4 h-4 inline" />
+                        {date}
+                    </span>
+                    <span className="ml-4 rounded-lg p-1">
+                        <AiFillFolderOpen className="mr-2 w-4 h-4 inline text-regal-green" />{category}
+                    </span>
+            </div>
+                <ReactMarkdown className="text-regal-black">
+                     {title}
+                </ReactMarkdown>
+                <div id="image" className="mb-4"></div>
+                <ShareButton url={`https://engineeeer.site/blog/article/${params.id}`} title={title}/>
+                <ReactMarkdown components={components} className="text-regal-black">
+                    {content}
+                </ReactMarkdown>
+                <div className="m-0 h-4"></div>
+            </div>
 
         </main>
     )
