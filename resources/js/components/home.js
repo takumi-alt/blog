@@ -34,6 +34,7 @@ const Home = () => {
                 }
             }
         })
+        document.title = "home";
     }, []);
 
     return (

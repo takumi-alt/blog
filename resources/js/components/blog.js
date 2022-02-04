@@ -32,6 +32,10 @@ const Blog = () => {
     }, []);
 
     useEffect(() => {
+        document.title = title
+    });
+
+    useEffect(() => {
         const path = `/storage/${img}`;
         const element = <img src={path} width="600" className="mx-auto"></img>
         ReactDOM.render(element, document.getElementById('image'));

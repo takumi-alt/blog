@@ -15,11 +15,11 @@
     <script>
         hljs.highlightAll();
     </script>
-    <title>Document</title>
+    <title>Edit Page</title>
 </head>
 
-<body>
-    <div class="flex bg-regal-black">
+<body class="bg-regal-black">
+    <div class="flex">
         <!-- 記入欄 -->
         <div class="flex-1 bg-regal-black border-r-2 border-gray-600">
             <div class="mx-6">
@@ -82,21 +82,27 @@
             <div class="bg-regal-white mx-6 mt-10 transform scale-60 origin-top-left">
                 <!-- head部分 -->
                 <div class="flex justify-center items-center h-32 bg-white text-center relative">
-                    <div class="absolute mx-0 flex">
-                        <div class="w-24 h-24 rounded-part1 bg-regal-red mr-2"></div>
-                        <div class="w-24 h-24 rounded-part2 bg-regal-green mr-2"></div>
-                        <div class="w-24 h-24 rounded-part3 bg-regal-beige"></div>
-                    </div>
+                    <div class="absolute top-2 left-4 w-28 h-28 rounded-part1 bg-regal-red mr-2 opacity-80"></div>
+                    <div class="absolute top-4 right-80 w-16 h-16 rounded-part1 bg-regal-red mr-2 opacity-90"></div>
+                    <div class="absolute top-2 right-4 w-20 h-20 rounded-part2 bg-regal-green mr-2 opacity-60"></div>
+                    <div class="absolute top-6 left-80 w-20 h-20 rounded-part2 bg-regal-green mr-2 opacity-40"></div>
+                    <div class="absolute top-16 right-44 w-20 h-20 rounded-part3 bg-regal-beige opacity-70"></div>
+                    <div class="absolute top-28 left-44 w-20 h-20 rounded-part3 bg-regal-beige opacity-60"></div>
                     <span class="text-5xl text-regal-black z-50">engineer blog</span>
                 </div>
                 <!-- navタグ部分 -->
                 <div class="bg-white">
-                    <div class="flex justify-center h-12 w-2/3 mx-auto">
-                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">home</button>
-                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">search</button>
-                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">contact</button>
-                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-24 pr-24">info</button>
+                    <div class="bg-white flex justify-center h-12 w-2/3 mx-auto mb-4">
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-12 pr-12 leading-12 flex-1 text-center mr-4 rounded-2xl bg-regal-beige ml-4">home</button>
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-12 pr-12 leading-12 flex-1 text-center mr-4 rounded-2xl bg-regal-beige">programming</button>
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-12 pr-12 leading-12 flex-1 text-center mr-4 rounded-2xl bg-regal-beige">contact</button>
+                        <button class="text-regal-black h-12 font-mono text-xl my-auto pl-12 pr-12 leading-12 flex-1 text-center mr-4 rounded-2xl bg-regal-beige">profile</button>
                     </div>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                        <path fill="#f8f5f2" fill-opacity="1" d="M 1440 21.21 V 120 H 0 V 21.21 C 120 35.07 240 42 360 42 s 240 -6.93 360 -20.79 c 88.328 -8.794 154.574 -14.333 198.738 -16.618 A 3120.56 3120.56 0 0 1 1080 0.42 c 120 0 240 6.93 360 20.79 Z"></path>
+                    </svg>
                 </div>
                 <div class="bg-regal-beige">
                     <div class="pt-8 w-4/5 mx-auto">

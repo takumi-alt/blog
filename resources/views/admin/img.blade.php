@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="../css/app.css" rel="stylesheet">
-    <title>image</title>
+    <title>Create Img</title>
 </head>
 
 <body class="bg-regal-black">

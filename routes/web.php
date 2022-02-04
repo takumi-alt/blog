@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ReactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,8 @@ Route::get('/blog/1', function () {
 Route::get('/blog/{any}', function () {
     return view('react');
 })->where('any', '.*');
+
+Route::get('/blog/article/{any}', [ReactController::class, 'article'])->where('any', '.*');
 
 
 // Admin
