@@ -12,6 +12,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="icon" href="{{ asset('favicon.ico') }}" id="/favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/storage/apple-touch-icon-180x180.png">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
