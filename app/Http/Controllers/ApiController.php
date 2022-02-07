@@ -51,7 +51,7 @@ class ApiController extends Controller
     public function category($path)
     {
         $category_line = Category::where('category', $path)->first();
-        $posts = Post::where('status', 1)->where('category_id', $category_line['id'])->get();
+        $posts = Post::where('status', 1)->where('category_id', $category_line['id'])->orderBy('id', 'desc')->get();
 
         $created_at = [];
         $categorys = [];
