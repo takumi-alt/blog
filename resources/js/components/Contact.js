@@ -58,7 +58,7 @@ const Contact = () => {
                     
     return (
         <>
-            <Helmet title="Contact" />
+            <Helmet title="Contact - engineer blog" />
             <div className="bg-regal-beige mx-auto relative overflow-hidden">
                 <div className="w-4/5 pt-4 border-b-2 mx-auto">
                     <AiOutlineMail className="w-6 h-6 md:w-8 md:h-8 inline pr-2 text-regal-green" />

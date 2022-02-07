@@ -73,29 +73,12 @@ module.exports = {
             '4000': '4000ms',
         },
         animation: {
-            'rotate1': 'rotate 5s linear infinite',
-            'rotate2': 'rotate 7s linear infinite',
-            'rotate3': 'rotate 9s linear infinite',
-            'rotate2': 'rotate 11s linear infinite',
-            'rotate4': 'rotate 15s linear infinite',
-            'rotate5': 'rotate 18s linear infinite',
-            'rotate6': 'rotate 22s linear infinite',
-            'rotate7': 'rotate 25s linear infinite',
-            'rotate8': 'rotate 27s linear infinite',
             'round1': 'round_animate1 20s linear infinite',
             'round2': 'round_animate2 10s linear infinite',
             'round3': 'round_animate3 15s linear infinite',
             'round4': 'round_animate4 17s linear infinite',
-            'border_go_l': 'border_anim_go_l 460ms linear forwards',
-            'border_back_l': 'border_anim_back_l 400ms linear forwards',
-            'border_go_s': 'border_anim_go_s 460ms linear forwards',
-            'border_back_s': 'border_anim_back_s 440ms linear forwards'
         },
         keyframes: {
-            rotate: {
-                '0%': {transform: 'translateY(0) rotate(0deg)', opacity: '0.7'},
-                '100%': {transform: 'translateY(-2500px) rotate(720deg)', opacity: '0.3'}
-            },
             round_animate1: {
                 '0%': {borderRadius: '60% 40% 46% 54%/48% 66% 34% 52%', opacity:'0'},
                 '40%': {borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70% ', opacity:'0.4'},
@@ -120,33 +103,10 @@ module.exports = {
                 '75%': {borderRadius: '37% 63% 29% 71% / 73% 53% 47% 27%', opacity:'1.0'},
                 '100%': {borderRadius: '52% 48% 38% 62% / 54% 46% 54% 46%', opacity:'0'},
             },
-            border_anim_go_l: {
-                '0%': {width: '0rem'},
-                '100%': {width: '10rem'}
-            },
-            border_anim_back_l: {
-                '0%': {width: '10rem'},
-                '100%': {width: '0rem'}
-            },
-            border_anim_go_s: {
-                '0%': {width: '0rem'},
-                '100%': {width: '4.5rem'}
-            },
-            border_anim_back_s: {
-                '0%': {width: '4.5rem'},
-                '100%': {width: '0rem'}
-            },
         },
         
     },
     borderRadius: {
-        'part1': '50% 50% 50% 70%/50% 50% 70% 60%',
-        'part2': '80% 30% 50% 50%/50%',
-        'part3': '40% 40% 50% 40%/30% 50% 50% 50%',
-        'part4': '57% 43% 72% 28%/28% 10% 90% 72%',
-        'part5': '57% 43% 93% 7%/48% 83% 17% 52%',
-        'part6': '18% 82% 64% 36%/49% 62% 38% 51%',
-        'fish': '100px 0px 0px 100px/30px 0px 0px 30px',
         'sm': '0.125rem',
         default: '0.25rem',
         default: '4px',

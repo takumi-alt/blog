@@ -39,7 +39,7 @@ const Home = () => {
 
     return (
         <>
-            <Helmet title="Home" />
+            <Helmet title="Home - engineer blog" />
             <div className="relative overflow-hidden">
                 <main className="bg-regal-beige">
                     <div className="lg:w-4/5 bg-regal-beige mx-auto">

@@ -13,7 +13,7 @@ const Head = () => {
         for(let i = 0; i < engineers.length; i++) {
             const engineer = engineers[i]
             const cls = `text-4xl sm:text-5xl text-regal-black transform group-hover:-translate-y-5 transition duration-${(i + 1) * 200}`
-            const element = <span className ={cls}>{engineer}</span>
+            const element = <span key={i} className ={cls}>{engineer}</span>
             setSpan((prevArray) => [...prevArray, element])
         }
     },[])
@@ -22,7 +22,7 @@ const Head = () => {
         for(let i = 0; i < blogs.length; i++) {
             const blog = blogs[i]
             const cls = `text-4xl sm:text-5xl text-regal-black transform group-hover:-translate-y-5 transition duration-${(i + 1) * 200}`
-            const element = <span className ={cls}>{blog}</span>
+            const element = <span key={i} className ={cls}>{blog}</span>
             setBlog((prevArray) => [...prevArray, element])
         }
     },[])

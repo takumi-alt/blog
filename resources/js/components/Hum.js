@@ -20,7 +20,6 @@ const Hum = () => {
             setCategories(res.data.categories);
         })
     }, [])
-    console.log(categories);
 
     useEffect(() => {
         const up = document.getElementById('up');

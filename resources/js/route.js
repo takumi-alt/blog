@@ -9,7 +9,6 @@ import Hoot from './components/Hooter';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
-import Search from './components/Search';
 import Detail from './components/Detail';
 import Hum from './components/Hum';
 
@@ -26,7 +25,6 @@ const App = () => {
                 <Route path="/blog/article/:id" element={< Blog />} />
                 <Route path="/blog/contact/" element={< Contact />} />
                 <Route path="/blog/profile" element={< Profile />} />
-                <Route path="/blog/search/" element={< Search />} />
                 <Route path="/blog/category/:id" element={< Detail />} />
             </Routes>
             <Hoot />

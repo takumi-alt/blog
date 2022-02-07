@@ -19,8 +19,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="icon" href="{{ asset('/favicon.ico') }}" id="favicon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/storage/apple-touch-icon-180x180.png">
 </head>
 
 <body>
