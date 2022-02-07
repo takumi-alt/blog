@@ -52,6 +52,9 @@ const Contact = () => {
               setMethod("")
               setPath(`${false_path}`)
               e.preventDefault();
+          } else {
+            setMethod("POST")
+            setPath(`${true_path}`)
           }
           
         }
@@ -77,7 +80,7 @@ const Contact = () => {
                         <div className="mb-8 w-full">
                             <p className="mb-2 text-lg font-black">mail</p>
                             <input type="text" name="mail" className="border-none outline-none focus:shadow-2xlr block mx-auto rounded-xl w-full h-12" value={mail} onChange={handleChange}></input>
-                            <p className={active_mail ? "hidden" : "text-red-400"}>※メールアドレスを入力してください</p>
+                            <p className={active_mail ? "hidden" : "text-red-400"}>※メールアドレスを正しく入力してください</p>
                         </div>
                         <div className="mb-8 w-full">
                             <p className="mb-2 text-lg font-black">title</p>
