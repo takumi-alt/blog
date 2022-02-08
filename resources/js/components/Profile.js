@@ -41,7 +41,7 @@ const Profile = () => {
                                 <p className="text-xl font-medium w-32 bg-regal-green text-center rounded-lg shadow-green3">About</p>
                                 <p className="border-t-2 border-regal-red py-4 lg:text-lg text-regal-black">
                                     ご訪問ありがとうございます。サイト運営者の美馬 巧と申します。<br/>
-                                    私立大学に通う大学三年生です。将来はエンジニアとして活躍したいと思い、独学でプログラミングを勉強中です。<br/>
+                                    私立大学に通う大学三年生です。将来はエンジニアとして活躍したく、独学でプログラミングを勉強中です。<br/>
                                     お問い合わせは、Contactまたはinstagram、twitterからお願いします。
                                 </p>
                             </section>
@@ -68,7 +68,7 @@ const Profile = () => {
                                     <p className="text-lg md:text-xl text-black bg-regal-red text-center w-48 shadow-red2">No.1 engineer blog</p>
                                     <p>
                                         こちらのブログは私が初めて本格的に作製したサイトになります。<br/>
-                                        CRUD機能を搭載しており、SPA化もしています。<br/>
+                                        reactを使用し、シングルアプリケーションにしています。<br/>
                                         使用技術としては主に、Laravel, React, Tailwindcssを用いています。
                                     </p>
                                 </div>
