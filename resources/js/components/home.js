@@ -50,23 +50,6 @@ const Home = () => {
                             </span>
                         </div>
                         <ul className="w-4/5 lg:w-full mb-0 list-none mx-auto mt-6">
-                        {/* <ul className="w-full mb-0 list-none flex flex-wrap lg:justify-between justify-center"> */}
-                            {/* {
-                                posts.map((post, index) => <li key={post.id} className="bg-regal-white w-58 h-48 sm:w-84 sm:h-64 m-4 sm:m-8 shadow-2xlr transition duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero rounded-xl">
-                                    <Link to={`/blog/article/${post.path}`} className="h-34 sm:h-45 w-full items-end justify-center rounded-xl">
-                                        <img src={`/storage/${post.filepath}`} className="block rounded-t-xl"></img>
-                                        <span className="bg-rgba w-full h-14 sm:h-18 absolute bottom-0 left-0 px-2 rounded-b-xl">
-                                            <div className="text-xs text-gray-500">
-                                                <span><AiOutlineHistory className="inline text-regal-green" />{date[index]}</span>
-                                                <span className="ml-4"><AiFillFolderOpen className="inline text-regal-green" />{category[index]}</span>
-                                            </div>
-                                            <span className="text-regal-black font-semibold rounded-b-xl text-sm sm:text-base ">
-                                            {post.title}
-                                            </span>
-                                        </span>
-                                    </Link>
-                                    </li>)
-                            } */}
                             {
                                 posts.map((post, index) => <li key={post.id} className="bg-regal-white shadow-2xlr transition duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero rounded-xl mb-6">
                                     <Link to={`/blog/article/${post.path}`} className="flex hover:no-underline pl-2 py-2">
@@ -76,7 +59,7 @@ const Home = () => {
                                                 <span><AiOutlineHistory className="inline text-regal-green" />{date[index]}</span>
                                                 <span className="ml-4"><AiFillFolderOpen className="inline text-regal-green"/>{category[index]}</span>
                                             </div>
-                                            <span className="text-base lg:text-xl text-regal-black">
+                                            <span className="text-base lg:text-xl text-regal-black font-medium">
                                             {post.title}
                                             </span>
                                         </span>
