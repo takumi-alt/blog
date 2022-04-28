@@ -43,17 +43,17 @@ const Home = () => {
             <div className="relative overflow-hidden">
                 <main className="bg-regal-beige">
                     <div className="lg:w-4/5 bg-regal-beige mx-auto">
-                        <div className="w-4/5 lg:w-full pt-4 border-b-2 mx-auto">
+                        <div className="w-6/7 lg:w-full pt-4 border-b-2 mx-auto">
                             <AiOutlineHome className="w-6 h-6 md:w-8 md:h-8 inline pr-2 text-regal-green" />
                             <span className="text-nomal md:text-lg font-black opacity-75">
                                 home
                             </span>
                         </div>
-                        <ul className="w-4/5 lg:w-full mb-0 list-none mx-auto mt-6">
+                        <ul className="w-6/7 lg:w-full mb-0 list-none mx-auto mt-6">
                             {
                                 posts.map((post, index) => <li key={post.id} className="bg-regal-white shadow-2xlr transition duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:shadow-zero rounded-xl mb-6">
                                     <Link to={`/blog/article/${post.path}`} className="flex hover:no-underline pl-2 py-2">
-                                        <img src={`/storage/${post.filepath}`} className="h-24 w-32 rounded-lg"></img>
+                                        <img src={`/storage/${post.filepath}`} className="h-20 md:h-24 w-34 md:w-44 rounded-lg"></img>
                                         <span className="pl-2">
                                             <div className="text-xs text-gray-500">
                                                 <span><AiOutlineHistory className="inline text-regal-green" />{date[index]}</span>
